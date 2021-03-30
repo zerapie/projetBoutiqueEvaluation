@@ -1,0 +1,34 @@
+CRITICAL - 2021-03-30 12:57:05 --> Cannot declare class App\Controllers\LoginRegister, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-03-30 12:57:23 --> Cannot declare class App\Controllers\LoginRegister, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-03-30 12:57:27 --> Cannot declare class App\Controllers\LoginRegister, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-03-30 13:08:53 --> Cannot declare class App\Controllers\LoginRegister, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-03-30 13:17:30 --> Cannot declare class App\Controllers\LoginRegister, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-03-30 14:32:39 --> Invalid file: admin/LoginRegister.php
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/LoginRegi...')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/LoginRegi...', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Loginregister.php(15): view('admin/LoginRegi...')
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->index()
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-30 14:37:18 --> Undefined constant "afLogin"
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include()
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('LoginRegister', Array, true)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Loginregister.php(15): view('LoginRegister', Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->index()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}

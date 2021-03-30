@@ -1,0 +1,46 @@
+CRITICAL - 2021-03-29 12:34:13 --> Class "App\Controllers\Controller" not found
+#0 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(294): include_once()
+#1 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-29 13:01:16 --> Invalid file: LoginRegister.php
+#0 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('LoginRegister.p...')
+#1 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('LoginRegister', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/app/Controllers/Home.php(12): view('LoginRegister')
+#3 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-29 13:01:58 --> Invalid file: LoginRegister.php
+#0 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('LoginRegister.p...')
+#1 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('LoginRegister', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/app/Controllers/Home.php(12): view('LoginRegister')
+#3 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-29 13:02:02 --> Invalid file: LoginRegister.php
+#0 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('LoginRegister.p...')
+#1 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('LoginRegister', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/app/Controllers/Home.php(12): view('LoginRegister')
+#3 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-29 13:02:04 --> Invalid file: LoginRegister.php
+#0 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('LoginRegister.p...')
+#1 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('LoginRegister', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/app/Controllers/Home.php(12): view('LoginRegister')
+#3 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projet-boutique-evaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
