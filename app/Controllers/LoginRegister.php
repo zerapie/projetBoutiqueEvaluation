@@ -41,10 +41,10 @@ class LoginRegister extends BaseController
                 'user_password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
             ];
             $model->save($data);
-            return redirect()->to('/LoginRegister');
+            return redirect()->to('/login');
         }else{
             $data['validation'] = $this->validator;
-            echo view('LoginRegister', $data);
+            echo view('register', $data);
         }
          
     }
@@ -69,15 +69,14 @@ class LoginRegister extends BaseController
                     'logged_in'     => TRUE
                 ];
                 $session->set($ses_data);
-                
                 return redirect()->to('/dashboard');
             }else{
                 $session->setFlashdata('msg', 'Wrong Password');
-                return redirect()->to('/LoginRegister');
+                return redirect()->to('/login');
             }
         }else{
             $session->setFlashdata('msg', 'Email not Found');
-            return redirect()->to('/LoginRegister');
+            return redirect()->to('/login');
         }
     }
  
@@ -85,6 +84,6 @@ class LoginRegister extends BaseController
     {
         $session = session();
         $session->destroy();
-        return redirect()->to('/LoginRegister');
+        return redirect()->to('/login');
     }
 }
