@@ -10,7 +10,7 @@
 						<div class="col-md-6 col-lg-5 mb-5 mb-lg-0">
 							<?php if ($afLogin) { ?>
 								<h2 class="font-weight-bold text-5 mb-0">Login</h2>
-								<form action="/" id="frmSignIn" method="post" class="needs-validation">
+								<form action="/loginregister/auth" id="frmSignIn" method="post" class="needs-validation">
 								<!-- EMAIL -->
 									<div class="form-row">
 										<div class="form-group col">
@@ -29,8 +29,8 @@
 									<div class="form-row justify-content-between">
 										<div class="form-group col-md-auto">
 											<div class="custom-control custom-checkbox">
-												<input name="" type="checkbox" class="custom-control-input" id="rememberme">
-												<label class="custom-control-label cur-pointer text-2" for="rememberme">Remember Me</label>
+												<input name="rememberme" type="checkbox" class="custom-control-input" id="rememberme">
+												<label class="custom-control-label cur-pointer text-2" for="rememberme">Souviens-toi de moi</label>
 											</div>
 										</div>
 								<!-- Mot de passe oublié -->
@@ -54,40 +54,40 @@
 						<div class="col-md-6 col-lg-5">
 							<?php if ($afresgister) { ?>
 								<h2 class="font-weight-bold text-5 mb-0">S'inscrire</h2>
-								<form action="/" id="frmSignUp" method="post">
+								<form action="/loginregister/save" id="frmSignUp" method="post">
 									<!-- PRENOM / user_first_name -->
 									<div class="form-row">
 										<div class="form-group col">
 											<label class="text-color-dark text-3">Prenom <span class="text-color-danger">*</span></label>
-											<input name="user_first_name" type="text" value="" class="form-control form-control-lg text-4" required>
+											<input name="user_first_name" 	type="text" 	value="" class="form-control form-control-lg text-4" required>
 										</div>
 									</div>
 									<!-- NOM / user_last_name -->
 									<div class="form-row">
 										<div class="form-group col">
 											<label class="text-color-dark text-3">Nom <span class="text-color-danger">*</span></label>
-											<input name="user_last_name" type="text" value="" class="form-control form-control-lg text-4" required>
+											<input name="user_last_name" 	type="text" 	value="" class="form-control form-control-lg text-4" required>
 										</div>
 									</div>
 								<!-- EMAIL -->
 									<div class="form-row">
 										<div class="form-group col">
 											<label class="text-color-dark text-3">Email address <span class="text-color-danger">*</span></label>
-											<input name="user_email" type="text" value="" class="form-control form-control-lg text-4" required>
+											<input name="user_email" 		type="text" 	value="" class="form-control form-control-lg text-4" required>
 										</div>
 									</div>
 								<!-- PASSWORD -->	
 									<div class="form-row">
 										<div class="form-group col">
 											<label class="text-color-dark text-3">Mot de passe <span class="text-color-danger">*</span></label>
-											<input name="user_password" type="password" value="" class="form-control form-control-lg text-4" required>
+											<input name="user_password" 	type="password" value="" class="form-control form-control-lg text-4" required>
 										</div>
 									</div>
 								<!-- CONF_PASSWORD -->
 									<div class="form-row">
 										<div class="form-group col">
 											<label class="text-color-dark text-3">Confirmation Mot de passe <span class="text-color-danger">*</span></label>
-                        					<input type="password" name="user_conf_password" class="form-control" id="InputForConfPassword">
+                        					<input name="user_conf_password" type="password" 		 class="form-control" id="InputForConfPassword">
 										</div>
 									</div>
 								<!-- INFO -->

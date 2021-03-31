@@ -88,6 +88,7 @@
 											</form>
 										</div>
 									</div>
+									<!-- PHONE -->
 									<ul class="header-extra-info col-lg-3 col-xl-2 pl-2 pl-xl-0 d-none d-lg-block">
 										<li class="d-none d-sm-inline-flex ml-0">
 											<div class="header-extra-info-icon">
@@ -96,6 +97,7 @@
 											<div class="header-extra-info-text">
 												<label class="text-1 font-weight-semibold text-color-default">APPELEZ-NOUS MAINTENANT</label>
 												<strong class="text-4"><a href="tel:+1234567890" class="text-color-hover-primary text-decoration-none">+596 696 33 22 11</a></strong>
+
 											</div>
 										</li>
 									</ul>
@@ -103,10 +105,40 @@
 									<div class="d-flex col-auto col-lg-2 pr-0 pl-0 pl-xl-3">
 										<ul class="header-extra-info">
 											<li class="ml-0 ml-xl-4">
-												<div class="header-extra-info-icon">
-													<a href="#" class="text-decoration-none text-color-dark text-color-hover-primary text-2">
+												<div class="header-extra-info-icon userbox" id="userbox">
+													<a href="#" data-toggle="dropdown" class="text-decoration-none text-color-dark text-color-hover-primary text-2">
 														<i class="icons icon-user"></i>
 													</a>
+													<div class="dropdown-menu">
+													<?php	if ($session->get('user_id')) { ?>
+														<ul class="list-unstyled">
+															<li>
+																<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="bx bx-user"></i> My Profile</a>
+															</li>
+															<li>
+																<a role="menuitem" tabindex="-1" href="<?php echo base_url('loginregister/logout') ;?>"><i class="bx bx-log-out"></i> Logout</a>
+															</li>
+														</ul>
+
+													<?php	} else { ?>
+															<ul class="list-unstyled">
+																<li>
+																	<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="bx bx-user"></i> Connexion / Inscription</a>
+																</li>
+															</ul>
+														<?php	}
+													 ?>
+
+
+
+
+
+
+
+														
+
+													</div>
+
 												</div>
 											</li>
                                             <!-- COEUR -->
@@ -115,6 +147,7 @@
 													<a href="#" class="text-decoration-none text-color-dark text-color-hover-primary text-2">
 														<i class="icons icon-heart"></i>
 													</a>
+
 												</div>
 											</li>
 										</ul>

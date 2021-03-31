@@ -8,7 +8,9 @@ class OrderComplete extends BaseController
 {
 	public function index()
 	{
-
+		$data = [
+			'session' => session(),
+		];
 	
 		echo view('common/Header');
 		echo view('OrderComplete');

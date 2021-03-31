@@ -1,0 +1,195 @@
+CRITICAL - 2021-03-31 07:13:54 --> Class "App\Controllers\UserModel" not found
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->save()
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-03-31 07:14:21 --> Class "App\Controllers\UserModel" not found
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->save()
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-03-31 07:14:35 --> Class "App\Controllers\UserModel" not found
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->save()
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-03-31 07:28:59 --> Undefined array key "user_name"
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Loginregister.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/zerapie/...', 71)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->auth()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-03-31 07:39:50 --> syntax error, unexpected identifier "®®", expecting "function" or "const"
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute('loginregister')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('loginregister')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-03-31 07:39:50 --> syntax error, unexpected identifier "®®", expecting "function" or "const"
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute('loginregister')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('loginregister')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-03-31 07:39:50 --> syntax error, unexpected identifier "®®", expecting "function" or "const"
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute('loginregister')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('loginregister')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-03-31 07:39:50 --> syntax error, unexpected identifier "®®", expecting "function" or "const"
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute('loginregister')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('loginregister')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-03-31 07:39:51 --> syntax error, unexpected identifier "®®", expecting "function" or "const"
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute('loginregister')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('loginregister')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-03-31 08:36:44 --> Undefined variable $session
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/common/Header.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 100)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('common/Header', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Panier.php(14): view('common/Header')
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Panier->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panier))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-31 08:46:03 --> Undefined variable $session
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/common/Header.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 100)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('common/Header', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Loginregister.php(21): view('common/Header')
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-31 08:47:06 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-03-31 08:48:21 --> Undefined variable $session
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/common/Header.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 113)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('common/Header', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Loginregister.php(21): view('common/Header')
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-31 08:48:37 --> Undefined variable $session
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/common/Header.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 113)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('common/Header', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Loginregister.php(21): view('common/Header')
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-31 08:48:56 --> Undefined variable $session
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/common/Header.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 113)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('common/Header', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Loginregister.php(21): view('common/Header')
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-31 08:48:59 --> Undefined variable $session
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/common/Header.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 113)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('common/Header', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Loginregister.php(21): view('common/Header')
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-31 08:50:08 --> Undefined variable $session
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/common/Header.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 113)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('common/Header', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Loginregister.php(21): view('common/Header')
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-31 08:50:15 --> Undefined variable $session
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/common/Header.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 113)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('common/Header', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Loginregister.php(21): view('common/Header')
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-31 08:52:37 --> Undefined variable $isconect
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/common/Header.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 113)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('common/Header', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Loginregister.php(21): view('common/Header')
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-31 08:54:21 --> Undefined variable $isconect
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/common/Header.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 113)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('common/Header', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Loginregister.php(21): view('common/Header')
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-31 08:54:24 --> Undefined variable $isconect
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/common/Header.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 113)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('common/Header', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Loginregister.php(21): view('common/Header')
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LoginRegister->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-31 09:32:40 --> Undefined variable $session
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/common/Header.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 113)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('common/Header', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Shop.php(13): view('common/Header')
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Shop->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

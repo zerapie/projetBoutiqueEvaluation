@@ -8,7 +8,9 @@ class Home extends BaseController
 {
 	public function index()
 	{
-
+		$data = [
+			'session' => session(),
+		];
 	
 		echo view('common/HeaderAdmin');
 		echo view('index');

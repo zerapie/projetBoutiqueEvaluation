@@ -8,7 +8,9 @@ class ProductFull extends BaseController
 {
 	public function index()
 	{
-
+		$data = [
+			'session' => session(),
+		];
 	
 		echo view('common/Header');
 		echo view('ProductFull');
