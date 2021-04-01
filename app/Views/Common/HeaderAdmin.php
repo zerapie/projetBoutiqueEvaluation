@@ -14,7 +14,7 @@
 		<meta name="viewport" 	 content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 		<!-- Web Fonts  -->
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700,800,900" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700,800,900" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="<?php echo base_url('app-assets/vendorAdmin/bootstrap/css/bootstrap.css') ;?>" />
@@ -56,8 +56,8 @@
 			<header class="header header-nav-menu header-nav-links">
 				<div class="logo-container">
 					<a href="../" class="logo">
-						<img src="<?php echo base_url('app-assets/img/logo-modern.png') ;?>" class="logo-image" width="90" height="24" alt="Porto Admin" />
-						<img src="<?php echo base_url('app-assets/img/logo-default.png') ;?>" class="logo-image-mobile" width="90" height="41" alt="Porto Admin" />
+						<img src="<?php echo base_url('app-assets/img/logo-default.png') ;?>" class="logo-image" width="90" height="24" alt="Porto Admin" />
+						<!-- <img src="<?php echo base_url('app-assets/img/logo-default.png') ;?>" class="logo-image-mobile" width="90" height="41" alt="Porto Admin" /> -->
 					</a>
 					<button class="btn header-btn-collapse-nav d-lg-none" data-toggle="collapse" data-target=".header-nav">
 						<i class="fas fa-bars"></i>
@@ -164,8 +164,8 @@
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="<?php echo base_url('admin/AddCategorie') ;?>">
-				                                    - Category Form
+				                                <a class="nav-link" href="<?php echo base_url('admin/ListSousCategorie') ;?>">
+				                                    - SousCategories List
 				                                </a>
 				                            </li>
 				                            <li>
@@ -179,7 +179,7 @@
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="<?php echo base_url('admin/') ;?>">
+				                                <a class="nav-link" href="<?php echo base_url('admin/ListOrders') ;?>">
 				                                    - Liste des commandes
 				                                </a>
 				                            </li>
@@ -189,7 +189,7 @@
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="<?php echo base_url('admin/ListeClient') ;?>">
+				                                <a class="nav-link" href="<?php echo base_url('admin/ListClient') ;?>">
 				                                    - Liste des clients
 				                                </a>
 				                            </li>
@@ -210,182 +210,6 @@
 				                    </li>
 									<!-- FIN MAIL-BOX -->
 									
-				                    <li class="nav-group-label">Visual</li>
-				                    <li class="nav-parent">
-				                        <a class="nav-link" href="#">
-				                            <i class="bx bx-layout" aria-hidden="true"></i>
-				                            <span>Layouts</span>
-				                        </a>
-				                        <ul class="nav nav-children">
-				                            <li>
-				                                <a class="nav-link" href="index.html">
-				                                    - Landing Page
-				                                </a>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="layouts-default.html">
-				                                    - Default
-				                                </a>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="layouts-modern.html">
-				                                    - Modern
-				                                </a>
-				                            </li>
-				                            <li class="nav-parent">
-				                                <a>
-				                                    - Boxed
-				                                </a>
-				                                <ul class="nav nav-children">
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-boxed.html">
-				                                            - Static Header
-				                                        </a>
-				                                    </li>
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-boxed-fixed-header.html">
-				                                            - Fixed Header
-				                                        </a>
-				                                    </li>
-				                                </ul>
-				                            </li>
-				                            <li class="nav-parent">
-				                                <a>
-				                                    - Horizontal Menu Header
-				                                </a>
-				                                <ul class="nav nav-children">
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-header-menu.html">
-				                                            - Pills
-				                                        </a>
-				                                    </li>
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-header-menu-stripe.html">
-				                                            - Stripe
-				                                        </a>
-				                                    </li>
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-header-menu-top-line.html">
-				                                            - Top Line
-				                                        </a>
-				                                    </li>
-				                                </ul>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="layouts-dark.html">
-				                                    - Dark
-				                                </a>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="layouts-dark-header.html">
-				                                    - Dark Header
-				                                </a>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="layouts-two-navigations.html">
-				                                    - Two Navigations
-				                                </a>
-				                            </li>
-				                            <li class="nav-parent">
-				                                <a>
-				                                    - Tab Navigation
-				                                </a>
-				                                <ul class="nav nav-children">
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-tab-navigation-dark.html">
-				                                            - Tab Navigation Dark
-				                                        </a>
-				                                    </li>
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-tab-navigation.html">
-				                                            - Tab Navigation Light
-				                                        </a>
-				                                    </li>
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-tab-navigation-boxed.html">
-				                                            - Tab Navigation Boxed
-				                                        </a>
-				                                    </li>
-				                                </ul>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="layouts-light-sidebar.html">
-				                                    - Light Sidebar
-				                                </a>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="layouts-left-sidebar-collapsed.html">
-				                                    - Left Sidebar Collapsed
-				                                </a>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="layouts-left-sidebar-scroll.html">
-				                                    - Left Sidebar Scroll
-				                                </a>
-				                            </li>
-				                            <li class="nav-parent">
-				                                <a>
-				                                    - Left Sidebar Big Icons
-				                                </a>
-				                                <ul class="nav nav-children">
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-left-sidebar-big-icons.html">
-				                                            - Left Sidebar Big Icons Dark
-				                                        </a>
-				                                    </li>
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-left-sidebar-big-icons-light.html">
-				                                            - Left Sidebar Big Icons Light
-				                                        </a>
-				                                    </li>
-				                                </ul>
-				                            </li>
-				                            <li class="nav-parent">
-				                                <a>
-				                                    - Left Sidebar Panel
-				                                </a>
-				                                <ul class="nav nav-children">
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-left-sidebar-panel.html">
-				                                            - Left Sidebar Panel Dark
-				                                        </a>
-				                                    </li>
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-left-sidebar-panel-light.html">
-				                                            - Left Sidebar Panel Light
-				                                        </a>
-				                                    </li>
-				                                </ul>
-				                            </li>
-				                            <li class="nav-parent">
-				                                <a>
-				                                    - Left Sidebar Sizes
-				                                </a>
-				                                <ul class="nav nav-children">
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-sidebar-sizes-xs.html">
-				                                            - Left Sidebar XS
-				                                        </a>
-				                                    </li>
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-sidebar-sizes-sm.html">
-				                                            - Left Sidebar SM
-				                                        </a>
-				                                    </li>
-				                                    <li>
-				                                        <a class="nav-link" href="layouts-sidebar-sizes-md.html">
-				                                            - Left Sidebar MD
-				                                        </a>
-				                                    </li>
-				                                </ul>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="layouts-square-borders.html">
-				                                    - Square Borders
-				                                </a>
-				                            </li>
-				                        </ul>
-				                    </li>
 				                    <li class="nav-group-label">Content</li>
 				                    <li class="nav-parent">
 				                        <a class="nav-link" href="#">
@@ -755,67 +579,6 @@
 				                            </li>
 				                        </ul>
 				                    </li>
-				                    <li class="nav-group-label">Extra</li>
-				                    <li class="nav-parent">
-				                        <a class="nav-link" href="#">
-				                            <i class="bx bx-collection" aria-hidden="true"></i>
-				                            <span>Menu Levels</span>
-				                        </a>
-				                        <ul class="nav nav-children">
-				                            <li>
-				                                <a>
-				                                    - First Level
-				                                </a>
-				                            </li>
-				                            <li class="nav-parent">
-				                                <a class="nav-link" href="#">
-				                                    - Second Level
-				                                </a>
-				                                <ul class="nav nav-children">
-				                                    <li>
-				                                        <a>
-				                                            - Second Level Link #1
-				                                        </a>
-				                                    </li>
-				                                    <li>
-				                                        <a>
-				                                            - Second Level Link #2
-				                                        </a>
-				                                    </li>
-				                                    <li class="nav-parent">
-				                                        <a class="nav-link" href="#">
-				                                            - Third Level
-				                                        </a>
-				                                        <ul class="nav nav-children">
-				                                            <li>
-				                                                <a>
-				                                                    - Third Level Link #1
-				                                                </a>
-				                                            </li>
-				                                            <li>
-				                                                <a>
-				                                                    - Third Level Link #2
-				                                                </a>
-				                                            </li>
-				                                        </ul>
-				                                    </li>
-				                                </ul>
-				                            </li>
-				                        </ul>
-				                    </li>
-				                    <li>
-				                        <a class="nav-link" href="http://themeforest.net/item/porto-responsive-html5-template/4106987?ref=Okler">
-				                            <i class="bx bx-window-alt" aria-hidden="true"></i>
-				                            <span>Front-End <em class="not-included">(Not Included)</em></span>
-				                        </a>                        
-				                    </li>
-				                    <li>
-				                        <a class="nav-link" href="extra-changelog.html">
-				                            <i class="bx bx-book-alt" aria-hidden="true"></i>
-				                            <span>Changelog</span>
-				                        </a>                        
-				                    </li>
-				
 				                </ul>
 				            </nav>
 				

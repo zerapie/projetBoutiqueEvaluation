@@ -2,44 +2,55 @@
 
 use CodeIgniter\Controller;
 use App\Controllers\BaseController;
-use App\models\Categorie;
-use App\models\SousCategorie;
+use App\models\CategoriesModel;
 
 
-class AddCategorie extends BaseController
+class ListCategorie extends BaseController
 {
+
+    public function __construct()
+    {
+
+        $this->modelCategorie = new CategoriesModel();
+
+    }
+	/* **************************************************************************************************** *
+	 *          *         *         *         *  INDEX  *         *         *         *         *         * *
+	 * **************************************************************************************************** */
 	public function index()
 	{
 
+        $data = [
+
+            'modelCategorie' => $this->modelCategorie->findAll(), // pour la boucle listCategorie
+        ];
 	
 		echo view('common/HeaderAdmin');
-		echo view('admin/AddCategorie');
+		echo view('admin/AddCategorie', $data);
+		echo view('admin/ListCategorie', $data);
 		echo view('common/FooterAdmin');
 	}
 	/* **************************************************************************************************** *
 	 *          *         *         *         *REGISTER *         *         *         *         *         * *
 	 * **************************************************************************************************** */
-	public function save()
+	public function save($id=null)
     {
-        //définir le formulaire de validation des règles / set rules validation form
+         //définir le formulaire de validation des règles / set rules validation form
         $rules = [
-            'user_first_name' 	=> 'required',
-            'user_last_name'  	=> 'required',
+            'categorieNom'  	=> 'required',
         ];
          
         if($this->validate($rules)){
-            $model = new AddCategorieModel();
-            $data = [
-                'user_first_name'    => $this->request->getVar('user_first_name'),
-                'user_last_name'     => $this->request->getVar('user_last_name'),
+            $modelCategorie = new CategoriesModel();
+            $data  = [
+                'categorie_name'     => $this->request->getVar('categorieNom'),
             ];
-            $model->save($data);
+            $modelCategorie->save($data);
             return redirect()->to('/listcategorie');
         }else{
             $data['validation'] = $this->validator;
-            echo view('AddCategorie', $data);
+            echo view('ListCategorie', $data);
         }
-         
     }
 	/* **************************************************************************************************** *
 	 *          *         *         *         *  UPDATE *         *         *         *         *         * *
@@ -53,12 +64,11 @@ class AddCategorie extends BaseController
 	 * **************************************************************************************************** */
 	public function delete($id=null)
     {
-                     /* SUPPRETION D'UNE LIGNE PAR ID*/
-                     $this->AddCategorieModel->where('id', $id)->delete();
-                     /* REDIRECTION */
-                     return redirect()->to('/Admin/ListeCategorie/');
-                     // header('Location: '.base_url('/Admin/ListeCategorie/'));
-         
+        /* SUPPRETION D'UNE LIGNE PAR ID */
+        $this->modelCategorie->where('category_id', $id)->delete();
+        /* REDIRECTION */
+        return redirect()->to('/Admin/ListCategorie/');
+        // header('Location: '.base_url('/Admin/ListCategorie/'));
     }
 
 }

@@ -4,7 +4,7 @@ use CodeIgniter\Controller;
 use App\Controllers\BaseController;
 
 
-class AddClient extends BaseController
+class ListClient extends BaseController
 {
 	public function index()
 	{

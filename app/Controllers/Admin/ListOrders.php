@@ -4,7 +4,7 @@ use CodeIgniter\Controller;
 use App\Controllers\BaseController;
 
 
-class AddClient extends BaseController
+class ListOrders extends BaseController
 {
 	public function index()
 	{

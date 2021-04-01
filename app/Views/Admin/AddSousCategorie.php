@@ -1,11 +1,11 @@
 <section role="main" class="content-body content-body-modern mt-0">
 	<header class="page-header page-header-left-inline-breadcrumb">
-		<h2 class="font-weight-bold text-6">Nom de catégorie</h2>
+		<h2 class="font-weight-bold text-6">Nom de Souscatégorie</h2>
 		<div class="right-wrapper">
 			<ol class="breadcrumbs">
 				<li><span>Home</span></li>
 				<li><span>eCommerce</span></li>
-				<li><span>Categories</span></li>
+				<li><span>SousCategories</span></li>
 			</ol>
 	
 			<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
@@ -21,13 +21,13 @@
 						<div class="row">
 							<div class="col-lg-2-5 col-xl-1-5">
 								<i class="card-big-info-icon bx bx-slider"></i>
-								<h2 class="card-big-info-title">Détails de la catégorie</h2>
-								<p class="card-big-info-desc">Ajoutez ici la description de la catégorie avec tous les détails et informations nécessaires.</p>
+								<h2 class="card-big-info-title">Détails de la souscatégorie</h2>
+								<p class="card-big-info-desc">Ajoutez ici la description de la souscatégorie avec tous les détails et informations nécessaires.</p>
 							</div>
 							<div class="col-lg-3-5 col-xl-4-5">
                                 <!-- Categorie -->
                                 <div class="form-group row align-items-center">
-									<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Catégorie</label>
+									<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">SousCatégorie</label>
 									<div class="col-lg-7 col-xl-6">
 										<input type="text" class="form-control form-control-modern" name="categorieNom" value="" />
 									</div>
@@ -41,7 +41,7 @@
 		<div class="row action-buttons">
 			<div class="col-12 col-md-auto">
 				<button type="submit" class="submit-button btn btn-primary btn-px-4 py-3 d-flex align-items-center font-weight-semibold line-height-1" data-loading-text="Loading...">
-					<i class="bx bx-save text-4 mr-2"></i> Enregistrer la catégorie
+					<i class="bx bx-save text-4 mr-2"></i> Enregistrer la souscatégorie
 				</button>
 			</div>
 			<div class="col-12 col-md-auto px-md-0 mt-3 mt-md-0">
@@ -49,7 +49,7 @@
 			</div>
 			<div class="col-12 col-md-auto ml-md-auto mt-3 mt-md-0">
 				<a href="#" class="delete-button btn btn-danger btn-px-4 py-3 d-flex align-items-center font-weight-semibold line-height-1">
-					<i class="bx bx-trash text-4 mr-2"></i> Supprimer la catégorie
+					<i class="bx bx-trash text-4 mr-2"></i> Supprimer la souscatégorie
 				</a>
 			</div>
 		</div>
