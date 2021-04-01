@@ -6,12 +6,12 @@
 		<meta charset="UTF-8">
 
 		<title>Dashboard | Porto Admin - Responsive HTML5 Template</title>
-		<meta name="keywords" content="HTML5 Admin Template" />
+		<meta name="keywords" 	 content="HTML5 Admin Template" />
 		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
-		<meta name="author" content="okler.net">
+		<meta name="author" 	 content="okler.net">
 
 		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="viewport" 	 content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 		<!-- Web Fonts  -->
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700,800,900" rel="stylesheet" type="text/css">
@@ -69,8 +69,8 @@
 							<nav>
 								<ul class="nav nav-pills" id="mainNav">
 									<li class="">
-									    <a class="nav-link" href="layouts-default.html">
-									        Dashboard
+									    <a class="nav-link" href="<?php echo base_url('admin/home') ;?>">
+									        Dashboard 
 									    </a>    
 									</li>
 								</ul>
@@ -83,7 +83,7 @@
 				<!-- start: search & user box -->
 				<div class="header-right">
 			
-                    <!-- login -->
+                    <!-- DEBUT LOGIN -->
 					<div id="userbox" class="userbox">
 						<a href="#" data-toggle="dropdown">
 							<span class="profile-picture profile-picture-as-text">JD</span>
@@ -108,6 +108,7 @@
 							</ul>
 						</div>
 					</div>
+                    <!-- FIN LOGIN -->
 				</div>
 				<!-- end: search & user box -->
 			</header>
@@ -129,12 +130,13 @@
 				            
 				                <ul class="nav nav-main">
 				                    <li>
-				                        <a class="nav-link" href="layouts-default.html">
+				                        <a class="nav-link" href="<?php echo base_url('admin/home') ;?>">
 				                            <i class="bx bx-home-alt" aria-hidden="true"></i>
 				                            <span>Dashboard</span>
 				                        </a>                        
 				                    </li>
 				                    <li class="nav-group-label">APPs</li>
+									<!-- DEBUT E-COMMERCE -->
 				                    <li class="nav-parent nav-expanded nav-active">
 				                        <a class="nav-link" href="#">
 				                            <i class="bx bx-cart-alt" aria-hidden="true"></i>
@@ -142,68 +144,72 @@
 				                        </a>
 				                        <ul class="nav nav-children">
 				                            <li class="nav-active">
-				                                <a class="nav-link" href="ecommerce-dashboard.html">
+				                                <a class="nav-link" href="<?php echo base_url('admin/home') ;?>">
 				                                    - Dashboard
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-products-list.html">
-				                                    - Products List
+				                                <a class="nav-link" href="<?php echo base_url('admin/ListProduct') ;?>">
+				                                    - Produits Liste
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-products-form.html">
-				                                    - Products Form
+				                                <a class="nav-link" href="<?php echo base_url('admin/AddProduct') ;?>">
+				                                    - Produits Ajouter
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-category-list.html">
+				                                <a class="nav-link" href="<?php echo base_url('admin/ListCategorie') ;?>">
 				                                    - Categories List
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-category-form.html">
+				                                <a class="nav-link" href="<?php echo base_url('admin/AddCategorie') ;?>">
 				                                    - Category Form
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-coupons-list.html">
+				                                <a class="nav-link" href="<?php echo base_url('admin/Error_production') ;?>">
 				                                    - Coupons List
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-coupons-form.html">
+				                                <a class="nav-link" href="<?php echo base_url('admin/Error_production') ;?>">
 				                                    - Coupons Form
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-orders-list.html">
-				                                    - Orders List
+				                                <a class="nav-link" href="<?php echo base_url('admin/') ;?>">
+				                                    - Liste des commandes
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-orders-detail.html">
-				                                    - Orders Detail
+				                                <a class="nav-link" href="<?php echo base_url('admin/DetailOrders') ;?>">
+				                                    - Détail des commandes
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-customers-list.html">
-				                                    - Customers List
+				                                <a class="nav-link" href="<?php echo base_url('admin/ListeClient') ;?>">
+				                                    - Liste des clients
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-customers-form.html">
-				                                    - Customers Form
+				                                <a class="nav-link" href="<?php echo base_url('admin/AddClient') ;?>">
+				                                    - Ajouter des clients
 				                                </a>
 				                            </li>
 				                        </ul>
 				                    </li>
+									<!-- FIN E-COMMERCE -->
+									<!-- DEBUT MAIL-BOX -->
 				                    <li>
-				                        <a class="nav-link" href="mailbox-folder.html">
-				                            <i class="bx bx-envelope" aria-hidden="true"></i>
+										<a class="nav-link" href="mailbox-folder.html">
+											<i class="bx bx-envelope" aria-hidden="true"></i>
 				                            <span>Mailbox</span>
 				                        </a>                        
 				                    </li>
+									<!-- FIN MAIL-BOX -->
+									
 				                    <li class="nav-group-label">Visual</li>
 				                    <li class="nav-parent">
 				                        <a class="nav-link" href="#">

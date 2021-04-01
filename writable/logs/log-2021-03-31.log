@@ -193,3 +193,75 @@ CRITICAL - 2021-03-31 09:32:40 --> Undefined variable $session
 #7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2021-03-31 11:29:47 --> Invalid file: admin/ListProduct.php
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/ListProdu...')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListProdu...', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(14): view('admin/ListProdu...')
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-31 18:02:30 --> Invalid file: AddCategorie.php
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('AddCategorie.ph...')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('AddCategorie', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddCategorie.php(40): view('AddCategorie', Array)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddCategorie->save()
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddCategorie))
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-31 18:03:08 --> Invalid file: admin/ListProduct.php
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/ListProdu...')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListProdu...', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(14): view('admin/ListProdu...')
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-31 18:03:11 --> Invalid file: admin/ListProduct.php
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/ListProdu...')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListProdu...', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(14): view('admin/ListProdu...')
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-31 18:04:04 --> Invalid file: admin/ListProduct.php
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/ListProdu...')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListProdu...', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(14): view('admin/ListProdu...')
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-31 18:17:05 --> Invalid file: admin/ListProduct.php
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/ListProdu...')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListProdu...', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(14): view('admin/ListProdu...')
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-31 18:25:30 --> Invalid file: admin/ListProduct.php
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/ListProdu...')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListProdu...', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(14): view('admin/ListProdu...')
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-31 18:25:34 --> Invalid file: admin/ListProduct.php
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/ListProdu...')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListProdu...', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(14): view('admin/ListProdu...')
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

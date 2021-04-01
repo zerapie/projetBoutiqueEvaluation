@@ -2,6 +2,8 @@
 
 use CodeIgniter\Controller;
 use App\Controllers\BaseController;
+use App\Models\SousCategorie;
+use App\Models\Categorie;
 
 
 class Shop extends BaseController
