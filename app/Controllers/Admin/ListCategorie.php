@@ -39,6 +39,7 @@ class ListCategorie extends BaseController
         $rules = [
             'categorieNom'  	=> 'required',
         ];
+        dd('teste 1');
          
         if($this->validate($rules)){
             $modelCategorie = new CategoriesModel();
@@ -46,9 +47,11 @@ class ListCategorie extends BaseController
                 'categorie_name'     => $this->request->getVar('categorieNom'),
             ];
             $modelCategorie->save($data);
+            dd('teste 2');
             return redirect()->to('/listcategorie');
         }else{
             $data['validation'] = $this->validator;
+            dd('teste 3');
             echo view('ListCategorie', $data);
         }
     }

@@ -11,7 +11,7 @@ class ListProduct extends BaseController
 
 	
 		echo view('common/HeaderAdmin');
-		echo view('admin/Error_production');
+		echo view('admin/ListProduct');
 		echo view('common/FooterAdmin');
 	}
 }
