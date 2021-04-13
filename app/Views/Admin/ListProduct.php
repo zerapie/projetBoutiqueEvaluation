@@ -140,6 +140,8 @@
 						<div class="col-lg-3-5 col-xl-4-5">
 							<div class="row row-gutter-sm">
 							<!-- Debut Produit List -->
+							<?php	
+							foreach ($Products as $Product) { 	?>
 								<div class="col-sm-6 col-xl-3 mb-4">
 									<div class="card card-modern card-modern-alt-padding">
 										<div class="card-body bg-light">
@@ -148,11 +150,11 @@
 													<div class="image-frame-badges-wrapper">
 														<span class="badge badge-ecommerce badge-danger">27% OFF</span>
 													</div>
-													<a href="ecommerce-products-form.html"><img src="img/products/product-1.jpg" class="img-fluid" alt="Product Short Name" /></a>
+													<a href="ecommerce-products-form.html"><img src="<?php echo base_url('app-assets/img/products/product-1.jpg') ;?>" class="img-fluid" alt="<?php echo $Product['Product_photo_name']; ?>" /></a>
 												</div>
 											</div>
-											<small><a href="ecommerce-products-form.html" class="ecommerce-sidebar-link text-color-grey text-color-hover-primary text-decoration-none">CATEGORY</a></small>
-											<h4 class="text-4 line-height-2 mt-0 mb-2"><a href="ecommerce-products-form.html" class="ecommerce-sidebar-link text-color-dark text-color-hover-primary text-decoration-none">Product Short Name</a></h4>
+											<small><a href="ecommerce-products-form.html" class="ecommerce-sidebar-link text-color-grey text-color-hover-primary text-decoration-none"><?php echo $Product['category_id']; ?></a></small>
+											<h4 class="text-4 line-height-2 mt-0 mb-2"><a href="ecommerce-products-form.html" class="ecommerce-sidebar-link text-color-dark text-color-hover-primary text-decoration-none"><?php echo $Product['product_name']; ?></a></h4>
 											<div class="stars-wrapper">
 												<i class="fas fa-star"></i>
 												<i class="fas fa-star"></i>
@@ -161,12 +163,13 @@
 												<i class="fas fa-star"></i>
 											</div>
 											<div class="product-price">
-												<div class="regular-price on-sale">$59.00</div>
-												<div class="sale-price">$49.00</div>
+												<div class="regular-price on-sale"><?php echo $Product['regular_price']; ?></div>
+												<div class="sale-price"><?php echo $Product['price']; ?></div>
 											</div>
 										</div>
 									</div>
 								</div>
+							<?php }	?>
 							<!-- Fin Produit List -->
 							</div>
 							<div class="row row-gutter-sm justify-content-between">
@@ -174,6 +177,7 @@
 									<p class="text-center text-lg-left mb-0">Showing 1-8 of 60 results</p>
 								</div>
 								<div class="col-lg-auto order-1 order-lg-2 mb-3 mb-lg-0">
+									<!-- debut : pagination -->
 									<nav aria-label="Page navigation example">
 									  	<ul class="pagination pagination-modern pagination-modern-spacing justify-content-center justify-content-lg-start mb-0">
 									    	<li class="page-item">
@@ -193,6 +197,7 @@
 										    </li>
 									  	</ul>
 									</nav>
+									<!--  fin  : pagination -->
 								</div>
 							</div>
 						</div>

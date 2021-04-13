@@ -12,26 +12,27 @@
 			</div>
 		</header>
 		<!-- start: page -->
-			<form class="ecommerce-form action-buttons-fixed" action="#" method="post">
+			<form class="ecommerce-form action-buttons-fixed" action="<?php echo site_url('Admin/AddProduct/index') ;?>" enctype='multipart/form-data' method="post">
 				<div class="row">
 					<div class="col">
+						<!-- debut - general info -->
 						<section class="card card-modern card-big-info">
 							<div class="card-body">
 								<div class="row">
 									<div class="col-lg-2-5 col-xl-1-5">
 										<i class="card-big-info-icon bx bx-box"></i>
-										<h2 class="card-big-info-title">General Info</h2>
-										<p class="card-big-info-desc">Add here the product description with all details and necessary information.</p>
+										<h2 class="card-big-info-title">Informations générales</h2>
+										<p class="card-big-info-desc">Ajoutez ici la description du produit avec tous les détails et informations nécessaires.</p>
 									</div>
 									<div class="col-lg-3-5 col-xl-4-5">
 										<div class="form-group row align-items-center">
-											<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Product Name</label>
+											<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Nom Produit </label>
 											<div class="col-lg-7 col-xl-6">
 												<input type="text" class="form-control form-control-modern" name="productName" value="" required />
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-lg-5 col-xl-3 control-label text-lg-right pt-2 mt-1 mb-0">Product Description</label>
+											<label class="col-lg-5 col-xl-3 control-label text-lg-right pt-2 mt-1 mb-0">Description Produit </label>
 											<div class="col-lg-7 col-xl-6">
 												<textarea class="form-control form-control-modern" name="productDescription" rows="6"></textarea>
 											</div>
@@ -40,26 +41,26 @@
 								</div>
 							</div>
 						</section>
+						<!--  fin  - general info -->
 					</div>
 				</div>
 				<div class="row">
 					<div class="col">
+						<!-- debut - ajout photo -->
 						<section class="card card-modern card-big-info">
 							<div class="card-body">
 								<div class="row">
 									<div class="col-lg-2-5 col-xl-1-5">
 										<i class="card-big-info-icon bx bx-camera"></i>
-										<h2 class="card-big-info-title">Product Image</h2>
-										<p class="card-big-info-desc">Upload your Product image. You can add multiple images</p>
+										<h2 class="card-big-info-title">Image du produit</h2>
+										<p class="card-big-info-desc">Téléchargez votre image de produit. Vous pouvez ajouter plusieurs images</p>
 									</div>
 									<div class="col-lg-3-5 col-xl-4-5">
 										<div class="form-group row align-items-center">
 											<div class="col">
-												<div id="dropzone-form-image" class="dropzone-modern dz-square">
-													<span class="dropzone-upload-message text-center">
-														<i class="bx bxs-cloud-upload"></i>
-														<b class="text-color-primary">Drag/Upload</b> your images here.
-													</span>
+												<div id="dropzone-form-image" class="form-group row">
+													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Photo </label>
+													<input type="file" name="file" id="file">												
 												</div>
 											</div>
 										</div>
@@ -67,6 +68,8 @@
 								</div>
 							</div>
 						</section>
+						<!--  fin  - ajout photo -->
+
 					</div>
 				</div>
 				<div class="row">
@@ -75,45 +78,42 @@
 							<div class="card-body">
 								<div class="tabs-modern row" style="min-height: 490px;">
 									<div class="col-lg-2-5 col-xl-1-5">
-										<div class="nav flex-column" id="tab" role="tablist" aria-orientation="vertical">
-								      		<a class="nav-link active" id="price-tab" data-toggle="pill" href="#price" role="tab" aria-controls="price" aria-selected="true">Price</a>
-								      		<a class="nav-link" id="inventory-tab" data-toggle="pill" href="#inventory" role="tab" aria-controls="inventory" aria-selected="false">Inventory</a>
-								      		<a class="nav-link" id="shipping-tab" data-toggle="pill" href="#shipping" role="tab" aria-controls="shipping" aria-selected="false">Shipping</a>
-								      		<a class="nav-link" id="linked-products-tab" data-toggle="pill" href="#linked-products" role="tab" aria-controls="linked-products" aria-selected="false">Linked Products</a>
-								      		<a class="nav-link" id="attributes-tab" data-toggle="pill" href="#attributes" role="tab" aria-controls="attributes">Attributes</a>
-								      		<a class="nav-link" id="advanced-tab" data-toggle="pill" href="#advanced" role="tab" aria-controls="advanced">Advanced</a>
+										<div class="nav flex-column"   id="tab" 															role="tablist" 	aria-orientation="vertical">
+								      		<a class="nav-link active" id="price-tab" 			data-toggle="pill" href="#price" 			role="tab" 		aria-controls="price" 			aria-selected="true">Prix</a>
+								      		<a class="nav-link" 	   id="inventory-tab" 		data-toggle="pill" href="#inventory" 		role="tab" 		aria-controls="inventory" 		aria-selected="false">Inventaire</a>
+								      		<a class="nav-link" 	   id="shipping-tab" 		data-toggle="pill" href="#shipping" 		role="tab" 		aria-controls="shipping" 		aria-selected="false">Expédition</a>
+								      		<a class="nav-link" 	   id="linked-products-tab" data-toggle="pill" href="#linked-products" 	role="tab" 		aria-controls="linked-products" aria-selected="false">Produits liés</a>
+								      		<a class="nav-link" 	   id="attributes-tab" 		data-toggle="pill" href="#attributes" 		role="tab" 		aria-controls="attributes">Attributs</a>
+								      		<a class="nav-link" 	   id="advanced-tab" 		data-toggle="pill" href="#advanced" 		role="tab" 		aria-controls="advanced">Avancée</a>
 								    	</div>
 									</div>
 									<div class="col-lg-3-5 col-xl-4-5">
 										<div class="tab-content" id="tabContent">
+											<!-- debut - prix -->
 								      		<div class="tab-pane fade show active" id="price" role="tabpanel" aria-labelledby="price-tab">
 												<div class="form-group row align-items-center">
-													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Regular Price ($)</label>
+													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Prix ​​habituel (€)</label>
 													<div class="col-lg-7 col-xl-6">
-														<input type="text" class="form-control form-control-modern" name="regularPrice" value="" required />
+														<input type="text" class="form-control form-control-modern" name="regularPrice" value="" />
 													</div>
 												</div>
 												<div class="form-group row align-items-center">
-													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Sale Price ($)</label>
+													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Prix ​​de vente (€)</label>
 													<div class="col-lg-7 col-xl-6">
 														<input type="text" class="form-control form-control-modern" name="salePrice" value="" />
 													</div>
 												</div>
 								      		</div>
+											<!--  fin  - prix -->
+											<!-- debut - inventaire -->
 								      		<div class="tab-pane fade" id="inventory" role="tabpanel" aria-labelledby="inventory-tab">
 												<div class="form-group row align-items-center">
-													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">SKU</label>
-													<div class="col-lg-7 col-xl-6">
-														<input type="text" class="form-control form-control-modern" name="sku" value="" required />
-													</div>
-												</div>
-												<div class="form-group row align-items-center">
-													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Manage Stock?</label>
+													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Gérer le stock?</label>
 													<div class="col-lg-7 col-xl-6">
 														<div class="checkbox">
 															<label class="my-2">
 																<input type="checkbox" value="">
-																Enable stock management at product level
+																Activer la gestion des stocks au niveau des produits
 															</label>
 														</div>
 													</div>
@@ -122,9 +122,9 @@
 													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Stock Status</label>
 													<div class="col-lg-7 col-xl-6">
 														<select class="form-control form-control-modern" name="stockStatus">
-															<option value="in-stock" selected>In Stock</option>
-															<option value="out-of-stock">Out of Stock</option>
-															<option value="on-backorder">On Backorder</option>
+															<option value="in-stock" selected>En stock</option>
+															<option value="out-of-stock">Rupture de stock</option>
+															<option value="on-backorder">En rupture de stock</option>
 														</select>
 													</div>
 												</div>
@@ -134,15 +134,17 @@
 														<div class="checkbox">
 															<label class="my-2">
 																<input type="checkbox" value="">
-																Enable this to only allow one of this item to be bought in a single order
+																Activez cette option pour n'autoriser qu'un seul de ces articles à être acheté en une seule commande
 															</label>
 														</div>
 													</div>
 												</div>
 								      		</div>
+											<!--  fin  - inventaire -->
+											<!-- debut - expedition -->
 								      		<div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
 												<div class="form-group row align-items-center">
-													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Weight (oz)</label>
+													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Poids (kg)</label>
 													<div class="col-lg-7 col-xl-6">
 														<input type="text" class="form-control form-control-modern" name="weight" value="" />
 													</div>
@@ -152,74 +154,78 @@
 													<div class="col-lg-7 col-xl-6">
 														<div class="row">
 															<div class="col-xl-4 mb-3 mb-xl-0">
-																<input type="text" class="form-control form-control-modern" name="dimensionsLength" value="" placeholder="Length" />
+																<input type="text" class="form-control form-control-modern" name="dimensionsLength" value="" placeholder="Longueur" />
 															</div>
 															<div class="col-xl-4 mb-3 mb-xl-0">
-																<input type="text" class="form-control form-control-modern" name="dimensionsWidth" value="" placeholder="Width" />
+																<input type="text" class="form-control form-control-modern" name="dimensionsWidth" value="" placeholder="Largeur" />
 															</div>
 															<div class="col-xl-4">
-																<input type="text" class="form-control form-control-modern" name="dimensionsHeight" value="" placeholder="Height" />
+																<input type="text" class="form-control form-control-modern" name="dimensionsHeight" value="" placeholder="Hauteur" />
 															</div>
 														</div>
 													</div>
 												</div>
 												<div class="form-group row align-items-center">
-													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Shipping Class</label>
+													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Classe de la livraison</label>
 													<div class="col-lg-7 col-xl-6">
 														<select class="form-control form-control-modern" name="shippingclass">
-															<option value="in-stock" selected>No Shipping Class</option>
+															<option value="in-stock" selected>Aucune classe d'expédition</option>
 															<option value="out-of-stock">International</option>
 															<option value="on-backorder">National</option>
 														</select>
 													</div>
 												</div>
 								      		</div>
+											<!--  fin  - expedition -->
+											<!-- debut - produit liés -->
 								      		<div class="tab-pane fade" id="linked-products" role="tabpanel" aria-labelledby="linked-products-tab">
 												<div class="form-group row align-items-center">
-													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Upsells</label>
+													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Ventes incitatives</label>
 													<div class="col-lg-7 col-xl-6">
 														<select multiple data-plugin-selectTwo class="form-control form-control-modern" name="upSells" data-plugin-options='{ "placeholder": "Search for a product..." }'>
 															<option value=""></option>
-															<option value="product1">Porto Bag</option>
-															<option value="product2">Porto Shoes</option>
-															<option value="product3">Porto Jacket</option>
+															<option value="product1">Sac</option>
+															<option value="product2">Chaussures</option>
+															<option value="product3">Veste</option>
 														</select>
 													</div>
 												</div>
 												<div class="form-group row align-items-center">
-													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Cross-sells</label>
+													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Ventes croisées</label>
 													<div class="col-lg-7 col-xl-6">
 														<select multiple data-plugin-selectTwo class="form-control form-control-modern" name="crossSells" data-plugin-options='{ "placeholder": "Search for a product..." }'>
 															<option value=""></option>
-															<option value="product1">Porto Bag</option>
-															<option value="product2">Porto Shoes</option>
-															<option value="product3">Porto Jacket</option>
+															<option value="product1">Sac</option>
+															<option value="product2">Chaussures</option>
+															<option value="product3">Veste</option>
 														</select>
 													</div>
 												</div>
 								      		</div>
-								      		<div class="tab-pane fade" id="attributes" role="tabpanel" aria-labelledby="attributes-tab">
+											<!--  fin  - produit liés -->
+											<!-- debut - attributs -->
+											<div class="tab-pane fade" id="attributes" role="tabpanel" aria-labelledby="attributes-tab">
 												<div class="ecommerce-attributes-wrapper">
 													<div class="form-group row justify-content-center ecommerce-attribute-row">
 														<div class="col-xl-3">
-															<label class="control-label">Name</label>
+															<label class="control-label">Nom</label>
 															<input type="text" class="form-control form-control-modern" name="attName" value="Size" />
 															<div class="checkbox mt-3 mb-3 mb-lg-0">
 																<label class="my-2">
 																	<input type="checkbox" name="attVisible" value="1" checked>
-																	Visible on the product page
+																	Visible sur la page produit
 																</label>
 															</div>
 														</div>
 														<div class="col-xl-6">
-															<a href="#" class="ecommerce-attribute-remove text-color-danger float-right">Remove</a>
+															<a href="#" class="ecommerce-attribute-remove text-color-danger float-right">Supprimer</a>
 															<label class="control-label">Value(s)</label>
 															<textarea class="form-control form-control-modern" name="attValue" rows="4" placeholder="Enter some text, or some attributes by | separating values">Small|Medium|Big</textarea>
 														</div>
 													</div>
 													<div class="form-group row justify-content-center ecommerce-attribute-row">
 														<div class="col-xl-3">
-															<label class="control-label">Name</label>
+															<label class="control-label">Nom</label>
 															<input type="text" class="form-control form-control-modern" name="attName" value="Color" />
 															<div class="checkbox mt-3 mb-3 mb-lg-0">
 																<label class="my-2">
@@ -241,7 +247,9 @@
 													</div>
 												</div>
 								      		</div>
-								      		<div class="tab-pane fade" id="advanced" role="tabpanel" aria-labelledby="advanced-tab">
+											<!--  fin  - attributs -->
+											<!-- debut - avancée -->
+											<div class="tab-pane fade" id="advanced" role="tabpanel" aria-labelledby="advanced-tab">
 												<div class="form-group row">
 													<label class="col-lg-5 col-xl-3 control-label text-lg-right pt-2 mt-1 mb-0">Purchase Note</label>
 													<div class="col-lg-7 col-xl-6">
@@ -255,7 +263,8 @@
 													</div>
 												</div>
 								      		</div>
-								    	</div>
+											<!--  fin  - avancée -->
+										</div>
 									</div>
 								</div>
 							</div>
@@ -269,7 +278,7 @@
 						</button>
 					</div>
 					<div class="col-12 col-md-auto px-md-0 mt-3 mt-md-0">
-						<a href="ecommerce-products-list.html" class="cancel-button btn btn-light btn-px-4 py-3 border font-weight-semibold text-color-dark text-3">Cancel</a>
+						<a href="<?php echo base_url('/admin/ListProduct'); ?>" class="cancel-button btn btn-light btn-px-4 py-3 border font-weight-semibold text-color-dark text-3">Cancel</a>
 					</div>
 					<div class="col-12 col-md-auto ml-md-auto mt-3 mt-md-0">
 						<a href="#" class="delete-button btn btn-danger btn-px-4 py-3 d-flex align-items-center font-weight-semibold line-height-1">

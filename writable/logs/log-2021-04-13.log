@@ -1,0 +1,373 @@
+CRITICAL - 2021-04-13 07:33:56 --> Undefined property: App\Controllers\Admin\AddProduct::$products
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/zerapie/...', 30)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-13 07:42:32 --> Undefined property: App\Controllers\Admin\AddProduct::$products
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/zerapie/...', 30)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-13 07:53:54 --> Undefined property: App\Controllers\Admin\AddProduct::$Livres
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/zerapie/...', 67)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-13 07:54:19 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(67): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 07:54:53 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(67): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 07:57:32 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(65): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 07:58:57 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(65): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 08:15:27 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(65): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 08:16:13 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 08:16:20 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 08:21:10 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 08:21:41 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 08:22:05 --> Undefined property: App\Controllers\Admin\AddProduct::$modelProduct
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/zerapie/...', 50)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-13 08:22:43 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 08:24:38 --> Undefined variable $modelProducts
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 50)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-13 08:25:34 --> Undefined property: App\Controllers\Admin\AddProduct::$queryProducts
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/zerapie/...', 50)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-13 08:29:48 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 08:34:32 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 08:36:32 --> Undefined variable $modelProducts
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 50)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-13 08:41:45 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 08:48:16 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 08:48:51 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 08:57:53 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 09:28:39 --> There is no data to insert.
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(50): CodeIgniter\BaseModel->save(Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 09:30:24 --> Undefined variable $data
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 49)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-13 09:33:41 --> Invalid file: ListProduct.php
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ListProduct.php')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('ListProduct', Array, true)
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/AddProduct.php(59): view('ListProduct', Array)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\AddProduct->save()
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AddProduct))
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-13 09:34:39 --> Undefined variable $validation
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/AddCategorie.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 35)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/AddCatego...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListCategorie.php(28): view('admin/AddCatego...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListCategorie->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-13 09:34:57 --> Undefined variable $validation
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/AddSousCategorie.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 35)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/AddSousCa...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListSousCategorie.php(28): view('admin/AddSousCa...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListSousCategorie->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListSousCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-13 09:34:59 --> Undefined variable $validation
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/AddCategorie.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 35)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/AddCatego...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListCategorie.php(28): view('admin/AddCatego...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListCategorie->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-13 09:36:34 --> Undefined variable $validation
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/AddSousCategorie.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 35)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/AddSousCa...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListSousCategorie.php(28): view('admin/AddSousCa...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListSousCategorie->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListSousCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-13 09:36:36 --> Undefined variable $validation
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/AddCategorie.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 35)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/AddCatego...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListCategorie.php(28): view('admin/AddCatego...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListCategorie->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-13 09:36:48 --> Undefined variable $validation
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/AddCategorie.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 35)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/AddCatego...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListCategorie.php(28): view('admin/AddCatego...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListCategorie->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-13 09:39:26 --> syntax error, unexpected token ";", expecting "]"
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute('admin/ListCateg...')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('admin/ListCateg...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-13 09:39:34 --> Call to a member function hasError() on null
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include()
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/AddCatego...', Array, true)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListCategorie.php(29): view('admin/AddCatego...', Array)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListCategorie->index()
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListCategorie))
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-13 09:40:09 --> Undefined variable $modelSousCategorie
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/ListSousCategorie.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 19)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListSousC...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListCategorie.php(64): view('admin/ListSousC...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListCategorie->save()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-13 09:41:41 --> Undefined variable $modelCategorie
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/ListCategorie.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 19)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListCateg...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListCategorie.php(64): view('admin/ListCateg...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListCategorie->save()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-13 09:41:51 --> Undefined variable $validation
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/AddSousCategorie.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 35)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/AddSousCa...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListSousCategorie.php(28): view('admin/AddSousCa...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListSousCategorie->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListSousCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-13 09:49:30 --> Undefined variable $modelCategorie
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/ListCategorie.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 19)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListCateg...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListCategorie.php(47): view('admin/ListCateg...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListCategorie->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-13 09:49:59 --> Undefined variable $modelCategorie
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/ListCategorie.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 19)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListCateg...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListCategorie.php(47): view('admin/ListCateg...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListCategorie->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

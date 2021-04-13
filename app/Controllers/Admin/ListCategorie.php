@@ -10,50 +10,45 @@ class ListCategorie extends BaseController
 
     public function __construct()
     {
-
+        /* ********** debut initialisation Model ********** */
         $this->modelCategorie = new CategoriesModel();
-
+		/* **********  fin  initialisation Model ********** */
     }
 	/* **************************************************************************************************** *
 	 *          *         *         *         *  INDEX  *         *         *         *         *         * *
 	 * **************************************************************************************************** */
-	public function index()
-	{
-
+	public function index($id=null)
+    {
+		/* ********** control du formulaire ********** */
+        $rules = [
+            'categorieNom' => 'required',
+        ];
+        /* ********** control du formulaire ********** */
+        
         $data = [
-
             'modelCategorie' => $this->modelCategorie->findAll(), // pour la boucle listCategorie
         ];
-	
-		echo view('common/HeaderAdmin');
-		echo view('admin/AddCategorie', $data);
-		echo view('admin/ListCategorie', $data);
-		echo view('common/FooterAdmin');
-	}
-	/* **************************************************************************************************** *
-	 *          *         *         *         *REGISTER *         *         *         *         *         * *
-	 * **************************************************************************************************** */
-	public function save($id=null)
-    {
-         //définir le formulaire de validation des règles / set rules validation form
-        $rules = [
-            'categorieNom'  	=> 'required',
-        ];
-        dd('teste 1');
-         
+
+        /* ********** debut - condition enregistrement ********** */
         if($this->validate($rules)){
-            $modelCategorie = new CategoriesModel();
+            /* ********** debut initialisation Model ********** */
+                $modelCategorie = new CategoriesModel();
+            /* ********** debut initialisation Model ********** */
+            
             $data  = [
-                'categorie_name'     => $this->request->getVar('categorieNom'),
+                'category_name'     => $this->request->getVar('categorieNom'),
             ];
             $modelCategorie->save($data);
-            dd('teste 2');
-            return redirect()->to('/listcategorie');
-        }else{
-            $data['validation'] = $this->validator;
-            dd('teste 3');
-            echo view('ListCategorie', $data);
+            
+            return redirect()->to('/Admin/ListCategorie');
         }
+		/* **********  fin  - condition enregistrement ********** */
+        
+    $data['validation'] = $this->validator;
+    echo view('common/HeaderAdmin');
+    echo view('admin/AddCategorie', $data);
+    echo view('admin/ListCategorie', $data);
+    echo view('common/FooterAdmin');
     }
 	/* **************************************************************************************************** *
 	 *          *         *         *         *  UPDATE *         *         *         *         *         * *

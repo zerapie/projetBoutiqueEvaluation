@@ -13,7 +13,7 @@
 	</header>
 
 	<!-- start: page -->
-	<form class="ecommerce-form action-buttons-fixed" action="<?php echo base_url('ListCategorie/save') ;?>" method="post">
+	<form class="ecommerce-form action-buttons-fixed" action="<?php echo base_url('Admin/ListCategorie/index') ;?>" enctype='multipart/form-data' method="post">
 		<div class="row">
 			<div class="col">
 				<section class="card card-modern card-big-info">
@@ -30,6 +30,14 @@
 									<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Catégorie</label>
 									<div class="col-lg-7 col-xl-6">
 										<input type="text" class="form-control form-control-modern" name="categorieNom" value="" />
+										<?php
+            								/* ********** debut message error ********** */
+            							    if ($validation->hasError('categorieNom'))
+            							    {
+            							        echo $validation->getError('categorieNom');
+            							    }
+            							    /* **********  fin  message error ********** */
+            							?>
 									</div>
 								</div>
 							</div>
@@ -48,7 +56,7 @@
 				<a href="ecommerce-category-list.html" class="cancel-button btn btn-light btn-px-4 py-3 border font-weight-semibold text-color-dark text-3">Annuler</a>
 			</div>
 			<div class="col-12 col-md-auto ml-md-auto mt-3 mt-md-0">
-				<a href="#" class="delete-button btn btn-danger btn-px-4 py-3 d-flex align-items-center font-weight-semibold line-height-1">
+				<a href="<?php echo base_url('ListCategorie/delete')?>" class="delete-button btn btn-danger btn-px-4 py-3 d-flex align-items-center font-weight-semibold line-height-1">
 					<i class="bx bx-trash text-4 mr-2"></i> Supprimer la catégorie
 				</a>
 			</div>

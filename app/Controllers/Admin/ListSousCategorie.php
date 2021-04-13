@@ -10,47 +10,45 @@ class ListSousCategorie extends BaseController
 
     public function __construct()
     {
-
+        /* ********** debut initialisation Model ********** */
         $this->modelSousCategorie = new SousCategoriesModel();
-
+		/* **********  fin  initialisation Model ********** */
     }
 	/* **************************************************************************************************** *
 	 *          *         *         *         *  INDEX  *         *         *         *         *         * *
 	 * **************************************************************************************************** */
-	public function index()
-	{
-
+	public function index($id=null)
+    {
+		/* ********** control du formulaire ********** */
+        $rules = [
+            'SousCategorieNom'  	=> 'required',
+        ];
+        /* ********** control du formulaire ********** */
+        
         $data = [
-
             'modelSousCategorie' => $this->modelSousCategorie->findAll(), // pour la boucle listSousCategorie
         ];
-	
-		echo view('common/HeaderAdmin');
-		echo view('admin/AddSousCategorie', $data);
-		echo view('admin/ListSousCategorie', $data);
-		echo view('common/FooterAdmin');
-	}
-	/* **************************************************************************************************** *
-	 *          *         *         *         *REGISTER *         *         *         *         *         * *
-	 * **************************************************************************************************** */
-	public function save($id=null)
-    {
-         //définir le formulaire de validation des règles / set rules validation form
-        $rules = [
-            'SouscategorieNom'  	=> 'required',
-        ];
-         
+
+        /* ********** debut - condition enregistrement ********** */
         if($this->validate($rules)){
+            /* ********** debut initialisation Model ********** */
             $modelSousCategorie = new SousCategoriesModel();
-            $data  = [
+            /* ********** debut initialisation Model ********** */
+
+            $dataSave  = [
                 'sous_categorie_name'     => $this->request->getVar('SousCategorieNom'),
             ];
-            $modelSousCategorie->save($data);
-            return redirect()->to('/listSousCategorie');
-        }else{
-            $data['validation'] = $this->validator;
-            echo view('ListSousCategorie', $data);
+            $modelSousCategorie->save($dataSave);
+
+            return redirect()->to('/Admin/ListSousCategorie');
         }
+        /* **********  fin  - condition enregistrement ********** */
+
+        $data['validation'] = $this->validator;
+        echo view('common/HeaderAdmin');
+        echo view('admin/AddSousCategorie', $data);
+        echo view('admin/ListSousCategorie', $data);
+        echo view('common/FooterAdmin');
     }
 	/* **************************************************************************************************** *
 	 *          *         *         *         *  UPDATE *         *         *         *         *         * *
