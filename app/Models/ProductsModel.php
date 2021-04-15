@@ -3,6 +3,6 @@
 use CodeIgniter\Model;
  
 class ProductsModel extends Model{
-    protected $table = 'Products';
-    protected $allowedFields = ['Products_id','Product_photo','Product_photo_name','product_name','Product_description','sous_categorie_id','categorie_id','regular_price','price'];
+    protected $table = 'products';
+    protected $allowedFields = ['Product_id','Product_photo','Product_photo_name','Product_name','Product_description','Sous_categorie_id','Category_id','Regular_price','Price'];
 }

@@ -1,0 +1,109 @@
+<?php	namespace App\Controllers;
+
+use CodeIgniter\Controller;
+use App\Controllers\BaseController;
+
+
+class NomControllers extends BaseController
+{
+	public function __construct()
+	{
+
+	}
+    /* ***************************************************************************************************** */
+    /*  *         *         *         *         *       *         *         *         *         *         *  */
+    /* *         *         *         *         *  INDEX  *         *         *         *         *         * */
+    /*  *         *         *         *         *       *         *         *         *         *         *  */
+    /* ***************************************************************************************************** */
+	public function index()
+	{
+		$data = [
+			
+		];
+	
+		echo view('common/Header');
+		echo view('Verifier', $data);
+		echo view('common/Footer');
+	}
+    /* ***************************************************************************************************** */
+    /*  *         *         *         *         *       *         *         *         *         *         *  */
+    /* *         *         *         *         *  SAVE   *         *         *         *         *         * */
+    /*  *         *         *         *         *       *         *         *         *         *         *  */
+    /* ***************************************************************************************************** */
+	public function save()
+	{
+
+	}
+    /* ***************************************************************************************************** */
+    /*  *         *         *         *         *       *         *         *         *         *         *  */
+    /* *         *         *         *         * DELETE  *         *         *         *         *         * */
+    /*  *         *         *         *         *       *         *         *         *         *         *  */
+    /* ***************************************************************************************************** */
+	public function delete()
+	{
+
+	}
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+/* ********** debut - save to update ********** */
+if ($save == "update") {
+		$this->modelProducts->where('product_id', $id)
+		->set($dataSave)
+		->update();
+		return redirect()->to('/admin/ListProduct');
+	} else {
+		$this->modelProducts->save($dataSave);
+		return redirect()->to('/admin/AddProduct');
+	}
+/* **********  fin  - save to update ********** */
+
+
+
+/* ********** ********** debut images enregistrement ********** ********** */
+	$file = $this->request->getfile('photo');
+	/* ********** verification image ********** */
+	if ($file) {
+		/* ********** verification de securiter ********** */
+		if ($file->isValid() && !$file->hasMoved()) {
+			/* ********** renome image ********** */
+			$newName = $file->getRandomName();
+			/* ********** chemin images ********** */			
+			$file->move(ROOTPATH.'/public/images', $newName);
+			/* ********** chemin images ********** */			
+			$dataSave['Porduct_photo'] = $newName;
+		}
+	}
+/* ********** **********  fin  images enregistrement ********** ********** */
+
+
+<?php
+	/* ********** debut message error ********** */
+    if ($validation->hasError('salePrice'))
+    {
+        echo $validation->getError('salePrice');
+    }
+    /* **********  fin  message error ********** */
+?>
+
+
+    /* ***************************************************************************************************** */
+    /*  *         *         *         *         *       *         *         *         *         *         *  */
+    /* *         *         *         *         *  INDEX  *         *         *         *         *         * */
+    /*  *         *         *         *         *       *         *         *         *         *         *  */
+    /* ***************************************************************************************************** */
+
+
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         *  INDEX  *         *         *         *         *         * *
+	 * ***************************************************************************************************** */

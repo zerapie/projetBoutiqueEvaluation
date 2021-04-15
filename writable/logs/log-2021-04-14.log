@@ -1,0 +1,171 @@
+CRITICAL - 2021-04-14 07:26:44 --> Undefined array key "category_id"
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/ListProduct.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/zerapie/...', 175)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListProdu...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(41): view('admin/ListProdu...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-14 07:27:48 --> Undefined array key "Category_id"
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/ListProduct.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/zerapie/...', 60)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListProdu...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(41): view('admin/ListProdu...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-14 07:33:43 --> Undefined array key "category_id"
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/ListProduct.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/zerapie/...', 175)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListProdu...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(41): view('admin/ListProdu...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-14 07:39:40 --> Undefined variable $listCategorie
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 38)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-14 07:40:01 --> Undefined variable $listCategorie
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 38)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-14 07:43:44 --> Undefined variable $listCategorie
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 37)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-14 07:44:15 --> Undefined variable $listCategorie
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 29)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-14 07:58:41 --> Undefined variable $listCategorie
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 30)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-14 08:01:13 --> Undefined variable $listCategorie
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 37)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-14 08:03:13 --> Undefined variable $listCategorie
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 37)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-14 08:31:19 --> Call to a member function paginate() on array
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index('2')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-14 08:32:01 --> Call to a member function paginate() on array
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index('2')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-14 08:32:14 --> Call to a member function paginate() on array
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index('2')
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-14 08:32:57 --> Call to a member function paginate() on array
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-14 09:36:59 --> Undefined variable $pager
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/ListProduct.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 197)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListProdu...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(43): view('admin/ListProdu...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-14 09:37:46 --> Undefined variable $modelProducts
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 39)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-14 09:38:08 --> Undefined variable $modelProducts
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListProduct.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 39)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListProduct->index()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListProduct))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-14 11:52:42 --> Undefined variable $pager
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/ListCategorie.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 49)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListCateg...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListCategorie.php(51): view('admin/ListCateg...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListCategorie->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-14 11:54:50 --> Undefined property: App\Controllers\Admin\ListCategorie::$modelProducts
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListCategorie.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/zerapie/...', 49)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListCategorie->index()
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListCategorie))
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-14 11:55:06 --> Undefined variable $modelCategorie
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/ListCategorie.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 19)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListCateg...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListCategorie.php(54): view('admin/ListCateg...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListCategorie->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-14 11:58:13 --> Undefined variable $modelCategorie
+#0 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Views/admin/ListCategorie.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/zerapie/...', 19)
+#1 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(220): include('/Users/zerapie/...')
+#2 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('admin/ListCateg...', Array, true)
+#4 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/app/Controllers/Admin/ListCategorie.php(57): view('admin/ListCateg...', Array)
+#5 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Admin\ListCategorie->index()
+#6 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ListCategorie))
+#7 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/zerapie/Documents/GitHub/projetBoutiqueEvaluation/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

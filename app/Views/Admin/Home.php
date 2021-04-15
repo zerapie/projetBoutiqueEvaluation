@@ -14,34 +14,38 @@
 					<!-- start: page -->
 					<div class="row">
 						<div class="col-lg-12 col-xl-4">
-					
-							<div class="row">
-								<div class="col-12">
-									<div class="card card-modern">
-										<div class="card-body p-0">
-											<div class="widget-user-info">
-												<div class="widget-user-info-header">
-													<h2 class="font-weight-bold text-color-dark text-5">Hello, John Doe</h2>
-													<p class="mb-0">Administrator</p>
-					
-													<div class="widget-user-acrostic bg-primary">
-														<span class="font-weight-bold">JD</span>
-													</div>
-												</div>
-												<div class="widget-user-info-body">
-													<div class="row">
-														<div class="col-auto">
-															<strong class="text-color-dark text-5">$19.876,02</strong>
-															<h3 class="text-4-1">User Balance</h3>
+							<!-- debut - Administrator -->
+								<div class="row">
+									<div class="col-12">
+										<div class="card card-modern">
+											<div class="card-body p-0">
+												<div class="widget-user-info">
+													<div class="widget-user-info-header">
+														<!-- debut presentation -->
+														<h2 class="font-weight-bold text-color-dark text-5">Hello, John Doe</h2>
+														<p class="mb-0">Administrator</p>
+														<!-- debut presentation -->
+														<!-- debut - photo -->
+														<div class="widget-user-acrostic bg-primary">
+															<span class="font-weight-bold">JD</span>
 														</div>
-														<div class="col-auto">
-															<strong class="text-color-dark text-5">637</strong>
-															<h3 class="text-4-1">Products</h3>
-														</div>
+														<!--  fin  - photo -->
 													</div>
-													<div class="row">
-														<div class="col">
-															<a href="pages-user-profile.html" class="btn btn-light btn-xl border font-weight-semibold text-color-dark text-3 mt-4">View Profile</a>
+													<div class="widget-user-info-body">
+														<div class="row">
+															<div class="col-auto">
+																<strong class="text-color-dark text-5">$19.876,02</strong>
+																<h3 class="text-4-1">User Balance</h3>
+															</div>
+															<div class="col-auto">
+																<strong class="text-color-dark text-5">637</strong>
+																<h3 class="text-4-1">Products</h3>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col">
+																<a href="pages-user-profile.html" class="btn btn-light btn-xl border font-weight-semibold text-color-dark text-3 mt-4">View Profile</a>
+															</div>
 														</div>
 													</div>
 												</div>
@@ -49,7 +53,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							<!--  fin  - Administrator -->
 							<div class="row">
 								<div class="col-lg-6 col-xl-12 pb-2 pb-lg-0 mb-4 mb-lg-0">
 									<div class="card card-modern">

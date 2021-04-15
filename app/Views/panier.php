@@ -6,13 +6,13 @@
 		<div class="col">
 			<ul class="breadcrumb font-weight-bold text-6 justify-content-center my-5">
 				<li class="text-transform-none mr-2">
-					<a href="shop-cart.html" class="text-decoration-none text-color-primary">Panier</a>
+					<a href="<?php echo base_url('panier');?>" class="text-decoration-none text-color-primary">Panier</a>
 				</li>
 				<li class="text-transform-none text-color-grey-lighten mr-2">
-					<a href="shop-checkout.html" class="text-decoration-none text-color-grey-lighten text-color-hover-primary">Vérifier</a>
+					<a href="<?php echo base_url('Verifier');?>" class="text-decoration-none text-color-grey-lighten text-color-hover-primary">Vérifier</a>
 				</li>
 				<li class="text-transform-none text-color-grey-lighten">
-					<a href="shop-order-complete.html" class="text-decoration-none text-color-grey-lighten text-color-hover-primary">Commande terminée</a>
+					<a href="<?php echo base_url('');?>shop-order-complete.html" class="text-decoration-none text-color-grey-lighten text-color-hover-primary">Commande terminée</a>
 				</li>
 			</ul>
 		</div>
@@ -20,7 +20,7 @@
 	<div class="row pb-4 mb-5">
 		<!-- DEBUT TABLEAU PANIER -->
 		<div class="col-lg-8 mb-5 mb-lg-0">
-			<form method="post" action="">
+			<form action="<?php echo site_url('Admin/panier/save') ;?>" enctype='multipart/form-data' method="post">
 				<div class="table-responsive">
 					<table class="shop_table cart">
 						<thead>
@@ -74,122 +74,6 @@
 								</td>
 							</tr>
 							<!--  -->
-							<tr class="cart_table_item">
-								<td class="product-thumbnail">
-									<div class="product-thumbnail-wrapper">
-										<a href="#" class="product-thumbnail-remove" title="Remove Product">
-											<i class="fas fa-times"></i>
-										</a>
-										<a href="shop-product-sidebar-right.html" class="product-thumbnail-image" title="Porto Headphone">
-											<img width="90" height="90" alt="" class="img-fluid" src="<?php echo base_url('app-assets/img/products/product-grey-7.jpg') ;?>">
-										</a>
-									</div>
-								</td>
-								<td class="product-name">
-									<a href="shop-product-sidebar-right.html" class="font-weight-semi-bold text-color-dark text-color-hover-primary text-decoration-none">Porto Headphone</a>
-								</td>
-								<td class="product-price">
-									<span class="amount font-weight-medium text-color-grey">$99</span>
-								</td>
-								<td class="product-quantity">
-									<div class="quantity float-none m-0">
-										<input type="button" class="minus text-color-hover-light bg-color-hover-primary border-color-hover-primary" value="-">
-										<input type="text" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
-										<input type="button" class="plus text-color-hover-light bg-color-hover-primary border-color-hover-primary" value="+">
-									</div>
-								</td>
-								<td class="product-subtotal text-right">
-									<span class="amount text-color-dark font-weight-bold text-4">$99</span>
-								</td>
-							</tr>
-							<!--  -->
-							<tr class="cart_table_item">
-								<td class="product-thumbnail">
-									<div class="product-thumbnail-wrapper">
-										<a href="#" class="product-thumbnail-remove" title="Remove Product">
-											<i class="fas fa-times"></i>
-										</a>
-										<a href="shop-product-sidebar-right.html" class="product-thumbnail-image" title="Golf Bag">
-											<img width="90" height="90" alt="" class="img-fluid" src="<?php echo base_url('app-assets/img/products/product-grey-2.jpg') ;?>">
-										</a>
-									</div>
-								</td>
-								<td class="product-name">
-									<a href="shop-product-sidebar-right.html" class="font-weight-semi-bold text-color-dark text-color-hover-primary text-decoration-none">Golf Bag</a>
-								</td>
-								<td class="product-price">
-									<span class="amount font-weight-medium text-color-grey">$19</span>
-								</td>
-								<td class="product-quantity">
-									<div class="quantity float-none m-0">
-										<input type="button" class="minus text-color-hover-light bg-color-hover-primary border-color-hover-primary" value="-">
-										<input type="text" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
-										<input type="button" class="plus text-color-hover-light bg-color-hover-primary border-color-hover-primary" value="+">
-									</div>
-								</td>
-								<td class="product-subtotal text-right">
-									<span class="amount text-color-dark font-weight-bold text-4">$19</span>
-								</td>
-							</tr>
-							<!--  -->
-							<tr class="cart_table_item">
-								<td class="product-thumbnail">
-									<div class="product-thumbnail-wrapper">
-										<a href="#" class="product-thumbnail-remove" title="Remove Product">
-											<i class="fas fa-times"></i>
-										</a>
-										<a href="shop-product-sidebar-right.html" class="product-thumbnail-image" title="Workout">
-											<img width="90" height="90" alt="" class="img-fluid" src="<?php echo base_url('app-assets/img/products/product-grey-3.jpg') ;?>">
-										</a>
-									</div>
-								</td>
-								<td class="product-name">
-									<a href="shop-product-sidebar-right.html" class="font-weight-semi-bold text-color-dark text-color-hover-primary text-decoration-none">Workout</a>
-								</td>
-								<td class="product-price">
-									<span class="amount font-weight-medium text-color-grey">$30</span>
-								</td>
-								<td class="product-quantity">
-									<div class="quantity float-none m-0">
-										<input type="button" class="minus text-color-hover-light bg-color-hover-primary border-color-hover-primary" value="-">
-										<input type="text" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
-										<input type="button" class="plus text-color-hover-light bg-color-hover-primary border-color-hover-primary" value="+">
-									</div>
-								</td>
-								<td class="product-subtotal text-right">
-									<span class="amount text-color-dark font-weight-bold text-4">$30</span>
-								</td>
-							</tr>
-
-							<tr class="cart_table_item">
-								<td class="product-thumbnail">
-									<div class="product-thumbnail-wrapper">
-										<a href="#" class="product-thumbnail-remove" title="Remove Product">
-											<i class="fas fa-times"></i>
-										</a>
-										<a href="shop-product-sidebar-right.html" class="product-thumbnail-image" title="Luxury Bag">
-											<img width="90" height="90" alt="" class="img-fluid" src="<?php echo base_url('app-assets/img/products/product-grey-4.jpg') ;?>">
-										</a>
-									</div>
-								</td>
-								<td class="product-name">
-									<a href="shop-product-sidebar-right.html" class="font-weight-semi-bold text-color-dark text-color-hover-primary text-decoration-none">Luxury Bag</a>
-								</td>
-								<td class="product-price">
-									<span class="amount font-weight-medium text-color-grey">$79</span>
-								</td>
-								<td class="product-quantity">
-									<div class="quantity float-none m-0">
-										<input type="button" class="minus text-color-hover-light bg-color-hover-primary border-color-hover-primary" value="-">
-										<input type="text" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
-										<input type="button" class="plus text-color-hover-light bg-color-hover-primary border-color-hover-primary" value="+">
-									</div>
-								</td>
-								<td class="product-subtotal text-right">
-									<span class="amount text-color-dark font-weight-bold text-4">$79</span>
-								</td>
-							</tr>
-
 						</tbody>
 					</table>
 				</div>

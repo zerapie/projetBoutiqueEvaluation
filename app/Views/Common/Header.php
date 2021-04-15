@@ -113,7 +113,7 @@
 													<?php	if ($session->get('user_id')) { ?>
 														<ul class="list-unstyled">
 															<li>
-																<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="bx bx-user"></i> My Profile</a>
+																<a role="menuitem" tabindex="-1" href="<?php echo base_url('User') ;?>"><i class="bx bx-user"></i> My Profile</a>
 															</li>
 															<li>
 																<a role="menuitem" tabindex="-1" href="<?php echo base_url('loginregister/logout') ;?>"><i class="bx bx-log-out"></i> Logout</a>
@@ -121,21 +121,13 @@
 														</ul>
 
 													<?php	} else { ?>
+
 															<ul class="list-unstyled">
 																<li>
 																	<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="bx bx-user"></i> Connexion / Inscription</a>
 																</li>
 															</ul>
-														<?php	}
-													 ?>
-
-
-
-
-
-
-
-														
+														<?php	} ?>
 
 													</div>
 
@@ -151,7 +143,7 @@
 												</div>
 											</li>
 										</ul>
-                                        <!-- PANNIER -->
+                                        <!-- DEBUT - PANIER -->
 										<div class="header-nav-features pl-0 ml-1">
 											<div class="header-nav-feature header-nav-features-cart header-nav-features-cart-big d-inline-flex top-2 ml-2">
 												<a href="#" class="header-nav-features-toggle">
@@ -161,6 +153,7 @@
 													</span>
 												</a>
 												<div class="header-nav-features-dropdown" id="headerTopCartDropdown">
+													<!-- miniature - panier -->	
 													<ol class="mini-products-list">
 														<li class="item">
 															<a href="#" title="Camera X1000" class="product-image"><img src="<?php echo base_url('app-assets/img/products/product-1.jpg') ;?>" alt="Camera X1000"></a>
@@ -175,17 +168,19 @@
 															</div>
 														</li>
 													</ol>
+													<!-- miniature - panier -->
 													<div class="totals">
 														<span class="label">Total:</span>
 														<span class="price-total"><span class="price">$890</span></span>
 													</div>
 													<div class="actions">
-														<a class="btn btn-dark" href="#">View Cart</a>
-														<a class="btn btn-primary" href="#">Checkout</a>
+														<a class="btn btn-dark" href="<?php echo base_url('panier');?>">Voir le panier</a>
+														<a class="btn btn-primary" href="<?php echo base_url('Verifier')?>">Vérifier</a>
 													</div>
 												</div>
 											</div>
 										</div>
+                                        <!--  FIN  - PANIER -->
 									</div>
 								</div>
 							</div>

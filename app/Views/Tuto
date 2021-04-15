@@ -1,0 +1,3 @@
+<form class=" " action="<?php echo site_url('Admin/AddProduct/save') ;?>" enctype='multipart/form-data' method="post">
+
+</form>

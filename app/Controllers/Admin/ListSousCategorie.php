@@ -14,9 +14,9 @@ class ListSousCategorie extends BaseController
         $this->modelSousCategorie = new SousCategoriesModel();
 		/* **********  fin  initialisation Model ********** */
     }
-	/* **************************************************************************************************** *
-	 *          *         *         *         *  INDEX  *         *         *         *         *         * *
-	 * **************************************************************************************************** */
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         *  INDEX  *         *         *         *         *         * *
+	 * ***************************************************************************************************** */
 	public function index($id=null)
     {
 		/* ********** control du formulaire ********** */
@@ -25,9 +25,6 @@ class ListSousCategorie extends BaseController
         ];
         /* ********** control du formulaire ********** */
         
-        $data = [
-            'modelSousCategorie' => $this->modelSousCategorie->findAll(), // pour la boucle listSousCategorie
-        ];
 
         /* ********** debut - condition enregistrement ********** */
         if($this->validate($rules)){
@@ -43,23 +40,31 @@ class ListSousCategorie extends BaseController
             return redirect()->to('/Admin/ListSousCategorie');
         }
         /* **********  fin  - condition enregistrement ********** */
+        
+        
+        /* ********** debut envoie sur la vue ********** */
+        $data = [
+            'validation' => $this->validator,
+            'modelSousCategorie' => $this->modelSousCategorie->paginate(10), // pour la boucle listSousCategorie
+            'pager' =>  $this->modelSousCategorie->pager
+        ];
 
-        $data['validation'] = $this->validator;
         echo view('common/HeaderAdmin');
         echo view('admin/AddSousCategorie', $data);
         echo view('admin/ListSousCategorie', $data);
         echo view('common/FooterAdmin');
+		/* **********  fin  envoie sur la vue ********** */
     }
-	/* **************************************************************************************************** *
-	 *          *         *         *         *  UPDATE *         *         *         *         *         * *
-	 * **************************************************************************************************** */
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         *  UPDATE *         *         *         *         *         * *
+	 * ***************************************************************************************************** */
 	public function update()
     {
          
     }
-	/* **************************************************************************************************** *
-	 *          *         *         *         *  DELETE *         *         *         *         *         * *
-	 * **************************************************************************************************** */
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         *  DELETE *         *         *         *         *         * *
+	 * ***************************************************************************************************** */
 	public function delete($id=null)
     {
         /* SUPPRETION D'UNE LIGNE PAR ID */

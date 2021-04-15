@@ -14,9 +14,9 @@ class ListCategorie extends BaseController
         $this->modelCategorie = new CategoriesModel();
 		/* **********  fin  initialisation Model ********** */
     }
-	/* **************************************************************************************************** *
-	 *          *         *         *         *  INDEX  *         *         *         *         *         * *
-	 * **************************************************************************************************** */
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         *  INDEX  *         *         *         *         *         * *
+	 * ***************************************************************************************************** */
 	public function index($id=null)
     {
 		/* ********** control du formulaire ********** */
@@ -25,9 +25,6 @@ class ListCategorie extends BaseController
         ];
         /* ********** control du formulaire ********** */
         
-        $data = [
-            'modelCategorie' => $this->modelCategorie->findAll(), // pour la boucle listCategorie
-        ];
 
         /* ********** debut - condition enregistrement ********** */
         if($this->validate($rules)){
@@ -35,31 +32,39 @@ class ListCategorie extends BaseController
                 $modelCategorie = new CategoriesModel();
             /* ********** debut initialisation Model ********** */
             
-            $data  = [
+            $dataSave  = [
                 'category_name'     => $this->request->getVar('categorieNom'),
             ];
-            $modelCategorie->save($data);
+            $modelCategorie->save($dataSave);
             
             return redirect()->to('/Admin/ListCategorie');
         }
 		/* **********  fin  - condition enregistrement ********** */
+		
         
-    $data['validation'] = $this->validator;
-    echo view('common/HeaderAdmin');
-    echo view('admin/AddCategorie', $data);
-    echo view('admin/ListCategorie', $data);
-    echo view('common/FooterAdmin');
+        /* ********** debut envoie sur la vue ********** */
+        $data = [
+            'validation' => $this->validator,
+            'modelCategorie' => $this->modelCategorie->paginate(10), // pour la boucle listCategorie
+            'pager' =>  $this->modelCategorie->pager
+        ];
+
+        echo view('common/HeaderAdmin');
+        echo view('admin/AddCategorie', $data);
+        echo view('admin/ListCategorie', $data);
+        echo view('common/FooterAdmin');
+		/* **********  fin  envoie sur la vue ********** */
     }
-	/* **************************************************************************************************** *
-	 *          *         *         *         *  UPDATE *         *         *         *         *         * *
-	 * **************************************************************************************************** */
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         *  UPDATE *         *         *         *         *         * *
+	 * ***************************************************************************************************** */
 	public function update()
     {
          
     }
-	/* **************************************************************************************************** *
-	 *          *         *         *         *  DELETE *         *         *         *         *         * *
-	 * **************************************************************************************************** */
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         *  DELETE *         *         *         *         *         * *
+	 * ***************************************************************************************************** */
 	public function delete($id=null)
     {
         /* SUPPRETION D'UNE LIGNE PAR ID */

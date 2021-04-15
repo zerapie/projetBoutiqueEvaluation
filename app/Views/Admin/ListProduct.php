@@ -51,17 +51,36 @@
 										<div class="card-actions">
 											<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
 										</div>
-										<h4 class="card-title">ELECTRONICS</h4>
+										<h4 class="card-title">CATEGORIES</h4>
 									</div>
+									<!-- debut - LISTE CATEGORIES -->
 									<div class="card-body">
 										<ul class="list list-unstyled mb-0">
-											<li><a href="#">Smart TVs</a></li>
-											<li><a href="#">Cameras</a></li>
-											<li><a href="#">Headphones</a></li>
-											<li><a href="#">Games</a></li>
+											<?php foreach ($Categories as $Categorie) { 	?>												
+												<li><a href="<?php echo base_url("/admin/ListProduct/index/".$Categorie['category_id']); ?>"><?php echo $Categorie['category_name']; ?></a></li>
+											<?php	}	?>
 										</ul>
 									</div>
+									<!--  fin  - LISTE CATEGORIES -->
 								</div>
+								<div class="card card-modern">
+									<div class="card-header">
+										<div class="card-actions">
+											<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+										</div>
+										<h4 class="card-title">SOUS-CATEGORIES</h4>
+									</div>
+									<!-- debut - LISTE SOUS-CATEGORIES -->
+									<div class="card-body">
+										<ul class="list list-unstyled mb-0">
+											<?php foreach ($SousCategories as $SousCategorie) { 	?>												
+												<li><a href="<?php echo $SousCategorie['sous_categorie_id']; ?>"><?php echo $SousCategorie['sous_categorie_name']; ?></a></li>
+											<?php	}	?>
+										</ul>
+									</div>
+									<!--  fin  - LISTE SOUS-CATEGORIES -->
+								</div>
+
 								<hr class="solid opacity-7">
 								<div class="card card-modern">
 									<div class="card-header">
@@ -153,8 +172,8 @@
 													<a href="ecommerce-products-form.html"><img src="<?php echo base_url('app-assets/img/products/product-1.jpg') ;?>" class="img-fluid" alt="<?php echo $Product['Product_photo_name']; ?>" /></a>
 												</div>
 											</div>
-											<small><a href="ecommerce-products-form.html" class="ecommerce-sidebar-link text-color-grey text-color-hover-primary text-decoration-none"><?php echo $Product['category_id']; ?></a></small>
-											<h4 class="text-4 line-height-2 mt-0 mb-2"><a href="ecommerce-products-form.html" class="ecommerce-sidebar-link text-color-dark text-color-hover-primary text-decoration-none"><?php echo $Product['product_name']; ?></a></h4>
+											<small><a href="ecommerce-products-form.html" class="ecommerce-sidebar-link text-color-grey text-color-hover-primary text-decoration-none"><?php echo $Product['Category_id']; ?></a></small>
+											<h4 class="text-4 line-height-2 mt-0 mb-2"><a href="ecommerce-products-form.html" class="ecommerce-sidebar-link text-color-dark text-color-hover-primary text-decoration-none"><?php echo $Product['Product_name']; ?></a></h4>
 											<div class="stars-wrapper">
 												<i class="fas fa-star"></i>
 												<i class="fas fa-star"></i>
@@ -163,8 +182,8 @@
 												<i class="fas fa-star"></i>
 											</div>
 											<div class="product-price">
-												<div class="regular-price on-sale"><?php echo $Product['regular_price']; ?></div>
-												<div class="sale-price"><?php echo $Product['price']; ?></div>
+												<div class="regular-price on-sale"><?php echo $Product['Regular_price']; ?></div>
+												<div class="sale-price"><?php echo $Product['Price']; ?></div>
 											</div>
 										</div>
 									</div>
@@ -172,34 +191,18 @@
 							<?php }	?>
 							<!-- Fin Produit List -->
 							</div>
+							<!-- debut : pagination -->
 							<div class="row row-gutter-sm justify-content-between">
 								<div class="col-lg-auto order-2 order-lg-1">
 									<p class="text-center text-lg-left mb-0">Showing 1-8 of 60 results</p>
 								</div>
 								<div class="col-lg-auto order-1 order-lg-2 mb-3 mb-lg-0">
-									<!-- debut : pagination -->
-									<nav aria-label="Page navigation example">
-									  	<ul class="pagination pagination-modern pagination-modern-spacing justify-content-center justify-content-lg-start mb-0">
-									    	<li class="page-item">
-									      		<a class="page-link prev" href="#" aria-label="Previous">
-										        	<span><i class="fas fa-chevron-left" aria-label="Previous"></i></span>
-										      	</a>
-									    	</li>
-										    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-										    <li class="page-item"><a class="page-link" href="#">2</a></li>
-										    <li class="page-item"><a class="page-link" href="#">3</a></li>
-										    <li class="page-item"><a class="page-link" href="#" disabled="true">...</a></li>
-										    <li class="page-item"><a class="page-link" href="#">15</a></li>
-										    <li class="page-item">
-										      	<a class="page-link next" href="#" aria-label="Next">
-										        	<span><i class="fas fa-chevron-right" aria-label="Next"></i></span>
-										      	</a>
-										    </li>
-									  	</ul>
-									</nav>
-									<!--  fin  : pagination -->
+								<?php 
+									echo $pager->links() 
+								?>
 								</div>
 							</div>
+							<!--  fin  : pagination -->
 						</div>
 					</div>
 					<!-- end: page -->

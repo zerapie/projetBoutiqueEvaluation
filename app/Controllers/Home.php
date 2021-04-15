@@ -12,9 +12,9 @@ class Home extends BaseController
 			'session' => session(),
 		];
 	
-		echo view('common/HeaderAdmin');
+		echo view('common/Header');
 		echo view('index');
-		echo view('common/FooterAdmin');
+		echo view('common/Footer');
 	}
 }
 ?>

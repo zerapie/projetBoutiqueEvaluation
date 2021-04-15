@@ -15,7 +15,7 @@ class LoginRegister extends BaseController
 		$data = [
             'afLogin'     =>true, // affiche login
             'afresgister' =>true, // affiche register
-			'session' => session(),
+			'session' => session(), // verrification connection
         ];
 	
 		echo view('common/Header', $data);

@@ -1,0 +1,64 @@
+<?php	namespace App\Controllers\Admin;
+
+use CodeIgniter\Controller;
+use App\Controllers\BaseController;
+use App\models\CategoriesModel;
+use App\models\SousCategoriesModel;
+
+
+class ProductDetail extends BaseController
+{
+
+    public function __construct()
+    {
+        /* ********** debut initialisation Model ********** */
+        $this->modelCategorie = new CategoriesModel();
+        $this->modelSousCategorie = new SousCategoriesModel();
+		/* **********  fin  initialisation Model ********** */
+    }
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         *  INDEX  *         *         *         *         *         * *
+	 * ***************************************************************************************************** */
+	public function index($id=null)
+    {
+		/* ********** control du formulaire ********** */
+        $rules = [
+
+        ];
+        /* ********** control du formulaire ********** */
+        
+
+        /* ********** debut - condition enregistrement ********** */
+        /* **********  fin  - condition enregistrement ********** */
+        
+        
+        /* ********** debut envoie sur la vue ********** */
+        $data = [
+
+        ];
+
+        echo view('common/HeaderAdmin');
+        echo view('admin/ProductDetail', $data);
+        echo view('common/FooterAdmin');
+		/* **********  fin  envoie sur la vue ********** */
+    }
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         *  UPDATE *         *         *         *         *         * *
+	 * ***************************************************************************************************** */
+	public function update()
+    {
+         
+    }
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         *  DELETE *         *         *         *         *         * *
+	 * ***************************************************************************************************** */
+	public function delete($id=null)
+    {
+        /* SUPPRETION D'UNE LIGNE PAR ID */
+        $this->modelSousCategorie->where('sous_categorie_id', $id)->delete();
+        /* REDIRECTION */
+        return redirect()->to('/Admin/ListSousCategorie/');
+        // header('Location: '.base_url('/Admin/ListSousCategorie/'));
+    }
+
+}

@@ -1,18 +1,18 @@
 <section role="main" class="content-body content-body-modern mt-0">
-		<header class="page-header page-header-left-inline-breadcrumb">
-			<h2 class="font-weight-bold text-6">Product Name</h2>
-			<div class="right-wrapper">
-				<ol class="breadcrumbs">
-					<li><span>Home</span></li>
-					<li><span>eCommerce</span></li>
-					<li><span>Products</span></li>
-				</ol>
-		
-				<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
-			</div>
-		</header>
-		<!-- start: page -->
-			<form class="ecommerce-form action-buttons-fixed" action="<?php echo site_url('Admin/AddProduct/index') ;?>" enctype='multipart/form-data' method="post">
+	<header class="page-header page-header-left-inline-breadcrumb">
+		<h2 class="font-weight-bold text-6">Product Name</h2>
+		<div class="right-wrapper">
+			<ol class="breadcrumbs">
+				<li><span>Home</span></li>
+				<li><span>eCommerce</span></li>
+				<li><span>Products</span></li>
+			</ol>
+			
+			<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
+		</div>
+	</header>
+	<!-- start: page -->
+			<form class="ecommerce-form action-buttons-fixed" action="<?php echo site_url('Admin/AddProduct/save') ;?>" enctype='multipart/form-data' method="post">
 				<div class="row">
 					<div class="col">
 						<!-- debut - general info -->
@@ -69,7 +69,7 @@
 							</div>
 						</section>
 						<!--  fin  - ajout photo -->
-
+						
 					</div>
 				</div>
 				<div class="row">
@@ -78,13 +78,13 @@
 							<div class="card-body">
 								<div class="tabs-modern row" style="min-height: 490px;">
 									<div class="col-lg-2-5 col-xl-1-5">
-										<div class="nav flex-column"   id="tab" 															role="tablist" 	aria-orientation="vertical">
-								      		<a class="nav-link active" id="price-tab" 			data-toggle="pill" href="#price" 			role="tab" 		aria-controls="price" 			aria-selected="true">Prix</a>
+										<div class="nav flex-column"   id="tab" role="tablist" 	aria-orientation="vertical">
+								      		<a class="nav-link active" id="price-tab" 			data-toggle="pill" href="#price" 			role="tab" 		aria-controls="price" 			aria-selected="true" >Prix</a>
 								      		<a class="nav-link" 	   id="inventory-tab" 		data-toggle="pill" href="#inventory" 		role="tab" 		aria-controls="inventory" 		aria-selected="false">Inventaire</a>
 								      		<a class="nav-link" 	   id="shipping-tab" 		data-toggle="pill" href="#shipping" 		role="tab" 		aria-controls="shipping" 		aria-selected="false">Expédition</a>
 								      		<a class="nav-link" 	   id="linked-products-tab" data-toggle="pill" href="#linked-products" 	role="tab" 		aria-controls="linked-products" aria-selected="false">Produits liés</a>
-								      		<a class="nav-link" 	   id="attributes-tab" 		data-toggle="pill" href="#attributes" 		role="tab" 		aria-controls="attributes">Attributs</a>
-								      		<a class="nav-link" 	   id="advanced-tab" 		data-toggle="pill" href="#advanced" 		role="tab" 		aria-controls="advanced">Avancée</a>
+								      		<a class="nav-link" 	   id="attributes-tab" 		data-toggle="pill" href="#attributes" 		role="tab" 		aria-controls="attributes"							 >Attributs</a>
+								      		<a class="nav-link" 	   id="advanced-tab" 		data-toggle="pill" href="#advanced" 		role="tab" 		aria-controls="advanced"							 >Avancée</a>
 								    	</div>
 									</div>
 									<div class="col-lg-3-5 col-xl-4-5">
@@ -180,24 +180,24 @@
 											<!-- debut - produit liés -->
 								      		<div class="tab-pane fade" id="linked-products" role="tabpanel" aria-labelledby="linked-products-tab">
 												<div class="form-group row align-items-center">
-													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Ventes incitatives</label>
+													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Categorie</label>
 													<div class="col-lg-7 col-xl-6">
-														<select multiple data-plugin-selectTwo class="form-control form-control-modern" name="upSells" data-plugin-options='{ "placeholder": "Search for a product..." }'>
+														<select multiple data-plugin-selectTwo class="form-control form-control-modern" name="Categories" 		data-plugin-options='{ "placeholder": "Search for a product..." }'>
 															<option value=""></option>
-															<option value="product1">Sac</option>
-															<option value="product2">Chaussures</option>
-															<option value="product3">Veste</option>
+															<?php foreach ($Categories as $Categorie) {  ?>
+																<option value="<?php echo $Categorie['category_id']; 			?>" ><?php echo $Categorie['category_name'];			?></option>
+															<?php } ?>
 														</select>
 													</div>
 												</div>
 												<div class="form-group row align-items-center">
-													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Ventes croisées</label>
+													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Sous-Categorie</label>
 													<div class="col-lg-7 col-xl-6">
-														<select multiple data-plugin-selectTwo class="form-control form-control-modern" name="crossSells" data-plugin-options='{ "placeholder": "Search for a product..." }'>
+														<select multiple data-plugin-selectTwo class="form-control form-control-modern" name="SousCategories" 	data-plugin-options='{ "placeholder": "Search for a product..." }'>
 															<option value=""></option>
-															<option value="product1">Sac</option>
-															<option value="product2">Chaussures</option>
-															<option value="product3">Veste</option>
+															<?php foreach ($SousCategories as $SousCategorie) {  ?>
+																<option value="<?php echo $SousCategorie['sous_categorie_id'];	?>" ><?php echo $SousCategorie['sous_categorie_name'];	?></option>
+															<?php } ?>
 														</select>
 													</div>
 												</div>
