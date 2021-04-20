@@ -6,13 +6,13 @@
 		<div class="col">
 			<ul class="breadcrumb breadcrumb-dividers-no-opacity font-weight-bold text-6 justify-content-center my-5">
 				<li class="text-transform-none mr-2">
-					<a href="shop-cart.html" class="text-decoration-none text-color-dark text-color-hover-primary">Shopping Cart</a>
+					<a href="<?php echo base_url('panier')?>" class="text-decoration-none text-color-dark text-color-hover-primary">Shopping Cart</a>
 				</li>
 				<li class="text-transform-none text-color-dark mr-2">
-					<a href="shop-checkout.html" class="text-decoration-none text-color-primary">Checkout</a>
+					<a href="<?php echo base_url('verifier')?>" class="text-decoration-none text-color-primary">Checkout</a>
 				</li>
 				<li class="text-transform-none text-color-grey-lighten">
-					<a href="shop-order-complete.html" class="text-decoration-none text-color-grey-lighten text-color-hover-primary">Order Complete</a>
+					<a href="<?php echo base_url('OrderComplete')?>" class="text-decoration-none text-color-grey-lighten text-color-hover-primary">Order Complete</a>
 				</li>
 			</ul>
 		</div>
@@ -20,7 +20,7 @@
 
 	<div class="row">
 		<div class="col">
-			<p class="mb-1">Returning customer? <a href="#" class="text-color-dark text-color-hover-primary text-uppercase text-decoration-none font-weight-bold" data-toggle="collapse" data-target=".login-form-wrapper">Login</a></p>
+			<p class="mb-1">Returning customer? <a href="<?php echo base_url('LoginRegister')?>" class="text-color-dark text-color-hover-primary text-uppercase text-decoration-none font-weight-bold" data-toggle="collapse" data-target=".login-form-wrapper">Login</a></p>
 		</div>
 	</div>
 
@@ -49,7 +49,7 @@
 								</div>
 							</div>
 							<div class="form-group col-md-auto">
-								<a class="text-decoration-none text-color-dark text-color-hover-primary font-weight-semibold text-2" href="#">Forgot Password?</a>
+								<a class="text-decoration-none text-color-dark text-color-hover-primary font-weight-semibold text-2" href="<?php echo base_url('')?>">Forgot Password?</a>
 							</div>
 						</div>
 						<div class="form-row">

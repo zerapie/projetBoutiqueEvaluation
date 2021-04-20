@@ -1,6 +1,6 @@
 <?php   namespace App\controllers;
 
-    use app\controllers\BaseController;
+use app\controllers\BaseController;
 
 class Api extends BaseController 
 {

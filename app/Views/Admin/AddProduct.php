@@ -1,17 +1,19 @@
-<section role="main" class="content-body content-body-modern mt-0">
-	<header class="page-header page-header-left-inline-breadcrumb">
-		<h2 class="font-weight-bold text-6">Product Name</h2>
-		<div class="right-wrapper">
-			<ol class="breadcrumbs">
-				<li><span>Home</span></li>
-				<li><span>eCommerce</span></li>
-				<li><span>Products</span></li>
-			</ol>
-			
-			<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
-		</div>
-	</header>
-	<!-- start: page -->
+	<section role="main" class="content-body content-body-modern mt-0">
+		<header class="page-header page-header-left-inline-breadcrumb">
+			<h2 class="font-weight-bold text-6">Product Name</h2>
+			<div class="right-wrapper">
+				<ol class="breadcrumbs">
+					<li><span>Home</span></li>
+					<li><span>eCommerce</span></li>
+					<li><span>Add Products</span></li>
+				</ol>
+
+				<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
+			</div>
+		</header>
+
+
+		<!-- start: page -->
 			<form class="ecommerce-form action-buttons-fixed" action="<?php echo site_url('Admin/AddProduct/save') ;?>" enctype='multipart/form-data' method="post">
 				<div class="row">
 					<div class="col">
@@ -25,18 +27,22 @@
 										<p class="card-big-info-desc">Ajoutez ici la description du produit avec tous les détails et informations nécessaires.</p>
 									</div>
 									<div class="col-lg-3-5 col-xl-4-5">
+										<!-- Debut - nom produit -->
 										<div class="form-group row align-items-center">
 											<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Nom Produit </label>
 											<div class="col-lg-7 col-xl-6">
 												<input type="text" class="form-control form-control-modern" name="productName" value="" required />
 											</div>
 										</div>
+										<!--  Fin  - nom produit -->
+										<!-- Debut - description -->
 										<div class="form-group row">
 											<label class="col-lg-5 col-xl-3 control-label text-lg-right pt-2 mt-1 mb-0">Description Produit </label>
 											<div class="col-lg-7 col-xl-6">
-												<textarea class="form-control form-control-modern" name="productDescription" rows="6"></textarea>
+												<textarea class="form-control form-control-modern" name="productDescription" value="" rows="6"></textarea>
 											</div>
 										</div>
+										<!--  Fin  - description -->
 									</div>
 								</div>
 							</div>
@@ -182,7 +188,7 @@
 												<div class="form-group row align-items-center">
 													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Categorie</label>
 													<div class="col-lg-7 col-xl-6">
-														<select multiple data-plugin-selectTwo class="form-control form-control-modern" name="Categories" 		data-plugin-options='{ "placeholder": "Search for a product..." }'>
+														<select multiple data-plugin-selectTwo class="form-control form-control-modern" name="Categories" 		value="" 	data-plugin-options='{ "placeholder": "Search for a product..." }'>
 															<option value=""></option>
 															<?php foreach ($Categories as $Categorie) {  ?>
 																<option value="<?php echo $Categorie['category_id']; 			?>" ><?php echo $Categorie['category_name'];			?></option>
@@ -193,7 +199,7 @@
 												<div class="form-group row align-items-center">
 													<label class="col-lg-5 col-xl-3 control-label text-lg-right mb-0">Sous-Categorie</label>
 													<div class="col-lg-7 col-xl-6">
-														<select multiple data-plugin-selectTwo class="form-control form-control-modern" name="SousCategories" 	data-plugin-options='{ "placeholder": "Search for a product..." }'>
+														<select multiple data-plugin-selectTwo class="form-control form-control-modern" name="SousCategories" 	value="" 	data-plugin-options='{ "placeholder": "Search for a product..." }'>
 															<option value=""></option>
 															<?php foreach ($SousCategories as $SousCategorie) {  ?>
 																<option value="<?php echo $SousCategorie['sous_categorie_id'];	?>" ><?php echo $SousCategorie['sous_categorie_name'];	?></option>
@@ -278,7 +284,7 @@
 						</button>
 					</div>
 					<div class="col-12 col-md-auto px-md-0 mt-3 mt-md-0">
-						<a href="<?php echo base_url('/admin/ListProduct'); ?>" class="cancel-button btn btn-light btn-px-4 py-3 border font-weight-semibold text-color-dark text-3">Cancel</a>
+						<a href="<?php echo base_url('/admin/ListProduct/'); ?>" class="cancel-button btn btn-light btn-px-4 py-3 border font-weight-semibold text-color-dark text-3">Cancel</a>
 					</div>
 					<div class="col-12 col-md-auto ml-md-auto mt-3 mt-md-0">
 						<a href="#" class="delete-button btn btn-danger btn-px-4 py-3 d-flex align-items-center font-weight-semibold line-height-1">

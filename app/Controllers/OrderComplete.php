@@ -12,7 +12,7 @@ class OrderComplete extends BaseController
 			'session' => session(),
 		];
 	
-		echo view('common/Header');
+		echo view('common/Header', $data);
 		echo view('OrderComplete');
 		echo view('common/Footer');
 	}

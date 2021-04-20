@@ -22,12 +22,12 @@
 												<div class="widget-user-info">
 													<div class="widget-user-info-header">
 														<!-- debut presentation -->
-														<h2 class="font-weight-bold text-color-dark text-5">Hello, John Doe</h2>
+														<h2 class="font-weight-bold text-color-dark text-5">Hello, <?php echo $userDetail['user_first_name']." ".$userDetail['user_last_name']; ?></h2>
 														<p class="mb-0">Administrator</p>
 														<!-- debut presentation -->
 														<!-- debut - photo -->
 														<div class="widget-user-acrostic bg-primary">
-															<span class="font-weight-bold">JD</span>
+															<span class="font-weight-bold">DP</span>
 														</div>
 														<!--  fin  - photo -->
 													</div>

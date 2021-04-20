@@ -7,24 +7,24 @@ use App\Models\LoginRegisterModel;
 
 class LoginRegister extends BaseController
 {
-	/* **************************************************************************************************** *
-	 *          *         *         *         *  INDEX  *         *         *         *         *         * *
-	 * **************************************************************************************************** */
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         *  INDEX  *         *         *         *         *         * *
+	 * ***************************************************************************************************** */
 	public function index()
 	{
 		$data = [
-            'afLogin'     =>true, // affiche login
-            'afresgister' =>true, // affiche register
-			'session' => session(), // verrification connection
+            'afLogin'     =>true,       // affiche login dans la vue
+            'afresgister' =>true,       // affiche register dans la vue
+			'session'     => session(), // verrification connection
         ];
 	
 		echo view('common/Header', $data);
 		echo view('LoginRegister', $data);
 		echo view('common/Footer');
 	}
-	/* **************************************************************************************************** *
-	 *          *         *         *         *REGISTER *         *         *         *         *         * *
-	 * **************************************************************************************************** */
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         *REGISTER *         *         *         *         *         * *
+	 * ***************************************************************************************************** */
 	public function save()
     {
         //définir le formulaire de validation des règles / set rules validation form
@@ -39,10 +39,10 @@ class LoginRegister extends BaseController
         if($this->validate($rules)){
             $model = new LoginRegisterModel();
             $data = [
-                'user_first_name'     => $this->request->getVar('user_first_name'),
-                'user_last_name'     => $this->request->getVar('user_last_name'),
-                'user_email'    => $this->request->getVar('user_email'),
-                'user_password' => password_hash($this->request->getVar('user_password'), PASSWORD_DEFAULT)
+                'user_first_name' => $this->request->getVar('user_first_name'),
+                'user_last_name'  => $this->request->getVar('user_last_name'),
+                'user_email'      => $this->request->getVar('user_email'),
+                'user_password'   => password_hash($this->request->getVar('user_password'), PASSWORD_DEFAULT)
             ];
             $model->save($data);
             return redirect()->to('/loginregister');
@@ -52,9 +52,9 @@ class LoginRegister extends BaseController
         }
          
     }
-	/* **************************************************************************************************** *
-	 *          *         *         *         *  LOGIN  *         *         *         *         *         * *
-	 * **************************************************************************************************** */
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         *  LOGIN  *         *         *         *         *         * *
+	 * ***************************************************************************************************** */
 	public function auth()
     {
         $session = session();
@@ -88,9 +88,9 @@ class LoginRegister extends BaseController
             return redirect()->to('/loginregister');
         }
     }
-	/* **************************************************************************************************** *
-	 *          *         *         *         * LOGOUT  *         *         *         *         *         * *
-	 * **************************************************************************************************** */
+	/* ***************************************************************************************************** *
+	 * *         *         *         *         * LOGOUT  *         *         *         *         *         * *
+	 * ***************************************************************************************************** */
     public function logout()
     {
         $session = session();

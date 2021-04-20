@@ -3,6 +3,7 @@
 use CodeIgniter\Controller;
 use App\Controllers\BaseController;
 use App\models\CategoriesModel;
+use App\models\LoginRegisterModel;
 
 
 class ListCategorie extends BaseController
@@ -11,6 +12,7 @@ class ListCategorie extends BaseController
     public function __construct()
     {
         /* ********** debut initialisation Model ********** */
+        $this->ModelUser      = new LoginRegisterModel();
         $this->modelCategorie = new CategoriesModel();
 		/* **********  fin  initialisation Model ********** */
     }
@@ -19,7 +21,19 @@ class ListCategorie extends BaseController
 	 * ***************************************************************************************************** */
 	public function index($id=null)
     {
-		/* ********** control du formulaire ********** */
+		/* ********** debut stock variable = initialisation session ********** */
+		$session = session();
+		/* **********  fin  stock variable = recuperation id par session ********** */
+		$user = $session->get('user_id');
+		/* **********  fin  stock variable = initialisation session ********** */
+
+
+		/* ********** debut stock variable = requette selection detail user par sesion ********** */
+		$userDetail = $this->ModelUser->where('user_id', $user)->first();
+		/* **********  fin  stock variable = requette selection detail user par sesion ********** */
+
+
+        /* ********** control du formulaire ********** */
         $rules = [
             'categorieNom' => 'required',
         ];
@@ -44,12 +58,13 @@ class ListCategorie extends BaseController
         
         /* ********** debut envoie sur la vue ********** */
         $data = [
+			'userDetail' => $userDetail,
             'validation' => $this->validator,
             'modelCategorie' => $this->modelCategorie->paginate(10), // pour la boucle listCategorie
             'pager' =>  $this->modelCategorie->pager
         ];
 
-        echo view('common/HeaderAdmin');
+        echo view('common/HeaderAdmin', $data);
         echo view('admin/AddCategorie', $data);
         echo view('admin/ListCategorie', $data);
         echo view('common/FooterAdmin');

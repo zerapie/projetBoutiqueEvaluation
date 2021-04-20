@@ -86,9 +86,9 @@
                     <!-- DEBUT LOGIN -->
 					<div id="userbox" class="userbox">
 						<a href="#" data-toggle="dropdown">
-							<span class="profile-picture profile-picture-as-text">JD</span>
-							<div class="profile-info profile-info-no-role" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
-								<span class="name">Hi, <strong class="font-weight-semibold">John Doe</strong></span>
+							<span class="profile-picture profile-picture-as-text">DP</span>
+							<div class="profile-info profile-info-no-role" data-lock-name="<?php echo $userDetail['user_first_name']." ".$userDetail['user_last_name']; ?>" data-lock-email="johndoe@okler.com">
+								<span class="name">Hi, <strong class="font-weight-semibold"><?php echo $userDetail['user_first_name']." ".$userDetail['user_last_name']; ?></strong></span>
 							</div>
 							
 							<i class="fas fa-chevron-down text-color-dark"></i>
@@ -97,13 +97,13 @@
 						<div class="dropdown-menu">
 							<ul class="list-unstyled">
 								<li>
-									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="bx bx-user"></i> My Profile</a>
+									<a role="menuitem" tabindex="-1" href="<?php echo base_url('/admin/UserAdmin');?>"><i class="bx bx-user"></i> My Profile</a>
 								</li>
 								<li>
-									<a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="bx bx-lock-open-alt"></i> Lock Screen</a>
+									<a role="menuitem" tabindex="-1" href="<?php echo base_url('Error_production');?>" data-lock-screen="true"><i class="bx bx-lock-open-alt"></i> Lock Screen</a>
 								</li>
 								<li>
-									<a role="menuitem" tabindex="-1" href="pages-signin.html"><i class="bx bx-log-out"></i> Logout</a>
+									<a role="menuitem" tabindex="-1" href="<?php echo base_url('loginregister/Logout'); ?>"><i class="bx bx-log-out"></i> Logout</a>
 								</li>
 							</ul>
 						</div>

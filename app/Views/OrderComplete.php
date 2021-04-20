@@ -6,13 +6,13 @@
 		<div class="col-lg-8">
 			<ul class="breadcrumb breadcrumb-dividers-no-opacity font-weight-bold text-6 justify-content-center my-5">
 				<li class="text-transform-none mr-2">
-					<a href="shop-cart.html" class="text-decoration-none text-color-dark text-color-hover-primary">Shopping Cart</a>
+					<a href="<?php echo base_url('panier')?>" class="text-decoration-none text-color-dark text-color-hover-primary">Shopping Cart</a>
 				</li>
 				<li class="text-transform-none text-color-dark mr-2">
-					<a href="shop-checkout.html" class="text-decoration-none text-color-dark text-color-hover-primary">Checkout</a>
+					<a href="<?php echo base_url('verifier')?>" class="text-decoration-none text-color-dark text-color-hover-primary">Checkout</a>
 				</li>
 				<li class="text-transform-none text-color-dark">
-					<a href="shop-order-complete.html" class="text-decoration-none text-color-primary">Order Complete</a>
+					<a href="<?php echo base_url('OrderComplite')?>" class="text-decoration-none text-color-primary">Order Complete</a>
 				</li>
 			</ul>
 		</div>
@@ -57,6 +57,7 @@
 					</span>
 				</div>
 			</div>
+
 			<div class="card border-width-3 border-radius-0 border-color-hover-dark mb-4">
 				<div class="card-body">
 					<h4 class="font-weight-bold text-uppercase text-4 mb-3">Your Order</h4>
@@ -113,6 +114,7 @@
 					</table>
 				</div>
 			</div>
+			
 			<div class="row pt-3">
 				<div class="col-lg-6 mb-4 mb-lg-0">
 					<h2 class="text-color-dark font-weight-bold text-5-5 mb-1">Billing Address</h2>

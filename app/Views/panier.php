@@ -12,7 +12,7 @@
 					<a href="<?php echo base_url('Verifier');?>" class="text-decoration-none text-color-grey-lighten text-color-hover-primary">Vérifier</a>
 				</li>
 				<li class="text-transform-none text-color-grey-lighten">
-					<a href="<?php echo base_url('');?>shop-order-complete.html" class="text-decoration-none text-color-grey-lighten text-color-hover-primary">Commande terminée</a>
+					<a href="<?php echo base_url('OrderComplete');?>" class="text-decoration-none text-color-grey-lighten text-color-hover-primary">Commande terminée</a>
 				</li>
 			</ul>
 		</div>
@@ -125,7 +125,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<a href="shop-checkout.html" class="btn btn-dark btn-modern btn-block text-uppercase bg-color-hover-primary border-color-hover-primary border-radius-0 text-3 py-3">Passer à la caisse <i class="fas fa-arrow-right ml-2"></i></a>
+					<a href="<?php echo base_url('verifier')?>" class="btn btn-dark btn-modern btn-block text-uppercase bg-color-hover-primary border-color-hover-primary border-radius-0 text-3 py-3">Passer à la caisse <i class="fas fa-arrow-right ml-2"></i></a>
 				</div>
 				<!--  Total du panier -->
 			</div>
