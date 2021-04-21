@@ -11,25 +11,31 @@ class ProductFull extends BaseController
 	{
 		/* ********** debut initialisation Model ********** */
 		$this->modelProducts = new ProductsModel();
-		// $this->modelCategorie = new CategoriesModel();
-		// $this->modelSousCategories 	= new SousCategoriesModel();
 		/* **********  fin  initialisation Model ********** */
-
 	}
-	public function index($id=null)
+	public function index($id=null, )
 	{
 		$product = $this->modelProducts->where('Product_id', $id)->first();
+		
+		
+		if (!empty($catID)) {
+			$SimiProducts = $this->modelProducts->where('Category_id',$catID)->paginate(16);
+		} else {
+			$SimiProducts = $this->modelProducts->paginate(8);
+		};
+		
 
-
-
+		/* ********** debut envoie sur la vue ********** */
 		$data = [
-			'session'  => session(),
-			'product' => $product
+			'session'  		=> session(),
+			'product' 		=> $product,
+            'SimiProducts'	=> $SimiProducts // pour la boucle liste des Produits
 		];
 
 		echo view('common/Header', $data);
-		echo view('ProductFull');
+		echo view('ProductFull', $data);
 		echo view('common/Footer');
+		/* **********  fin  envoie sur la vue ********** */
 	}
 }
 ?>

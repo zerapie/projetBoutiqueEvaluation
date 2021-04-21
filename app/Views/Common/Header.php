@@ -155,7 +155,7 @@
 													<!-- miniature - panier -->	
 													<ol class="mini-products-list">
 														<li class="item">
-															<a href="#" title="Camera X1000" class="product-image"><img src="<?php echo base_url('app-assets/img/products/product-1.jpg') ;?>" alt="Camera X1000"></a>
+															<a href="#" title="Camera X1000" class="product-image"><img src="<?php echo base_url('app-assets/img/visuel-indisponible.png'); ?>" alt="Camera X1000"></a>
 															<div class="product-details">
 																<p class="product-name">
 																	<a href="#">Camera X1000 </a>

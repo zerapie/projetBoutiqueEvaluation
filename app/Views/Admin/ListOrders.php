@@ -81,7 +81,7 @@
 										</thead>
 										<!-- debut - corps tableaux -->
 										<tbody>
-											<?php	foreach ($variable as $value) {		?>
+											<?php	foreach ($listOrders as $listOrder) {		?>
 													<tr>
 														<td width="30"><input type="checkbox" name="checkboxRow1" class="checkbox-style-1 p-relative top-2" value="" /></td>
 														<td><a href="ecommerce-orders-detail.html"><strong>191</strong></a></td>
@@ -90,8 +90,7 @@
 														<td>$200</td>
 														<td><span class="ecommerce-status on-hold">On Hold</span></td>
 													</tr>
-												<?php	};
-											?>
+												<?php	} ?>
 										</tbody>
 										<!-- debut - corps tableaux -->
 									</table>

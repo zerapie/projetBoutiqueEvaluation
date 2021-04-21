@@ -63,7 +63,7 @@ class ListSousCategorie extends BaseController
             'pager' =>  $this->modelSousCategorie->pager
         ];
         
-        echo view('common/HeaderAdmin');
+        echo view('common/HeaderAdmin', $data);
         echo view('admin/AddSousCategorie', $data);
         echo view('admin/ListSousCategorie', $data);
         echo view('common/FooterAdmin');

@@ -1,7 +1,7 @@
 <?php	namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
-
+use App\Models\LoginRegisterModel;
 
 class Error_production extends BaseController
 {

@@ -2,6 +2,7 @@
 
 use CodeIgniter\Controller;
 use App\Controllers\BaseController;
+use App\models\LoginRegisterModel;
 
 
 class ListClient extends BaseController

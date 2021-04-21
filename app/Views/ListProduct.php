@@ -158,11 +158,11 @@
 											<div class="image-frame-badges-wrapper">
 												<span class="badge badge-ecommerce badge-danger">27% OFF</span>
 											</div>
-											<a href="<?php echo base_url('/ProductFull') ;?>"><img src="<?php echo base_url('app-assets/img/products/product-1.jpg') ;?>" class="img-fluid" alt="<?php echo $Product['Product_photo_name']; ?>" /></a>
+											<a href="<?php echo base_url('/ProductFull/index/'.$Product['Product_id']) ;?>"><img src="<?php echo base_url('app-assets/img/products/product-1.jpg') ;?>" class="img-fluid" alt="<?php echo $Product['Product_photo_name']; ?>" /></a>
 										</div>
 									</div>
-									<small><a href="<?php echo base_url('/ProductFull') ;?>" class="ecommerce-sidebar-link text-color-grey text-color-hover-primary text-decoration-none"><?php echo $Product['Category_id']; ?></a></small>
-									<h4 class="text-4 line-height-2 mt-0 mb-2"><a href="<?php echo base_url('/ProductFull') ;?>" class="ecommerce-sidebar-link text-color-dark text-color-hover-primary text-decoration-none"><?php echo $Product['Product_name']; ?></a></h4>
+									<small><a href="#" class="ecommerce-sidebar-link text-color-grey text-color-hover-primary text-decoration-none"><?php echo $Product['Category_id']; ?></a></small>
+									<h4 class="text-4 line-height-2 mt-0 mb-2"><a href="<?php echo base_url('/ProductFull/index/'.$Product['Product_id']) ;?>" class="ecommerce-sidebar-link text-color-dark text-color-hover-primary text-decoration-none"><?php echo $Product['Product_name']; ?></a></h4>
 									<div class="stars-wrapper">
 										<i class="fas fa-star"></i>
 										<i class="fas fa-star"></i>
